@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: "/schoolofnaturalordercolorado",
   siteMetadata: {
     title: `The School of Natural Order - Colorado`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
