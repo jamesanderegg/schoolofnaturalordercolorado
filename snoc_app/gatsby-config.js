@@ -1,11 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `The School of The Natural Order - Colorado`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `The School of The Natural Order, Colorado Chapter`,
+    description: `A website for The School of The Natural Order`,
     author: `@gatsbyjs`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
