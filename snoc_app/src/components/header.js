@@ -19,7 +19,7 @@ const Header = ({ siteTitle }) => {
   return (
     <div>
       <Navbar fixed="top" light expand="sm">
-        <div className="container">
+        <div className="container-fluid">
           <NavbarText>{siteTitle}</NavbarText>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
@@ -28,13 +28,13 @@ const Header = ({ siteTitle }) => {
                 <NavLink href="/">Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/team">Team</NavLink>
+                <NavLink href="/About">About</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/tags">Tags</NavLink>
+                <NavLink href="/meditation">Meditation</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/about">About</NavLink>
+                <NavLink href="/other">Contact</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
