@@ -13,7 +13,13 @@ a {
   }
 }
 h1 {
-  margin-bottom: 20px;
+  letter-spacing: 5px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+h3 {
+  letter-spacing: 2px;
+  margin-bottom: 30px;
   text-align: center;
 }
 .navbar {
@@ -25,14 +31,14 @@ h1 {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #d8b39a;
+  color: rgb(252, 221, 155);
   &:hover {
     color: #d8c839;
   }
 }
 
 .navbar-light .navbar-text {
-  color: #d8b39a;
+  color: rgb(252, 221, 155);
   
   font-size: 24px;
 }
@@ -40,4 +46,7 @@ h1 {
 ul {
   list-style: none;
   padding: 0;
+}
+p {
+  letter-spacing: 2px;
 }
