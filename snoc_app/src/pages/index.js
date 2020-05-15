@@ -67,7 +67,7 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query {
-    indexImage: file(relativePath: { eq: "longspeak.jpg" }) {
+    indexImage: file(relativePath: { eq: "longs-peak.png" }) {
       childImageSharp {
         fluid(maxWidth: 1800) {
           ...GatsbyImageSharpFluid
