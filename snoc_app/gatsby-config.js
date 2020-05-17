@@ -2,16 +2,24 @@ module.exports = {
   siteMetadata: {
     title: `The School of The Natural Order, Colorado Chapter`,
     description: `A website for The School of The Natural Order`,
-    author: `@gatsbyjs`,
+    author: `@DataFluent`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages`,
       },
     },
     `gatsby-transformer-sharp`,

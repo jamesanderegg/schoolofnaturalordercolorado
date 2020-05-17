@@ -6,9 +6,9 @@ body {
   font-family: $site-font;
 }
 a {
-  color: #0056b3;
+  color: black;
   &:hover {
-    color: #007bff;
+    color: #005abb;
     text-decoration: none;
   }
 }
@@ -27,7 +27,7 @@ h3 {
   // border-right: 1px solid rgba(0, 0, 0, 0.4);
   // border-left: 1px solid rgba(0, 0, 0, 0.4);
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-  line-height: 3;
+  line-height: 2;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -36,11 +36,14 @@ h3 {
     color: #d8c839;
   }
 }
+.navbar-light .navbar-toggler{
+  background-color: rgb(146, 135, 106);
+}
 
 .navbar-light .navbar-text {
   color: rgb(252, 221, 155);
   
-  font-size: 24px;
+  font-size: 20px;
 }
 
 ul {
@@ -48,5 +51,5 @@ ul {
   padding: 0;
 }
 p {
-  letter-spacing: 2px;
+  letter-spacing: 3px;
 }

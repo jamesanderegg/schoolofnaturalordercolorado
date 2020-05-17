@@ -3,13 +3,16 @@ import BackgroundImage from "gatsby-background-image"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+
+import { Link } from "react-router-dom"
 import Video from "../components/video"
 import { Container, Row, Col } from "reactstrap"
+
+import RoundImage from "../components/roundImage"
 
 import "../styles/home.scss"
 
 const IndexPage = props => {
-  console.log(props.data)
   return (
     <Layout>
       <SEO title="Home" />
@@ -21,43 +24,74 @@ const IndexPage = props => {
           <div className="content-box">
             <h1>The Teachings of Vitvan</h1>
             <h3>The Power to be Conscious</h3>
-
-            <h3>WEBSITE UNDERCONSTRUCTION</h3>
+            <p style={{ marginTop: "15px" }}>
+              Changing Attitudes Towards Everything
+            </p>
           </div>
         </div>
       </BackgroundImage>
-      <Container fluid="md" >
+      <Container fluid="md">
         <Row>
-          <Col md={5} style={{ textAlign: "center" }}>
-            <h3>The Power to Be Conscious</h3>
-            <p>
-              “Do you know that the most important, fundamental, basic Fact
-              about yourself is the Power to be Conscious?
-            </p>
-            <p>
-              {" "}
-              With what power do you imagine? With what power do you conceive?
-              With what power do you formulate the neural responses of stimuli
-              received or registered into images, pictures, etc.? With what
-              power do you give values, meanings (and react thereto) etc.?
-            </p>
-            <p>
-              {" "}
-              Call that Power as you wish, label it as you like…with what power
-              do you reflect, ruminate, contemplate, etc.? For the sake of
-              communication we refer to That….. by whatever name you call it
-              …..as the Power to Be Conscious’
-            </p>
+          <Col
+            md={3}
+            style={{
+              textAlign: "center",
+              justifyContent: "center",
+              alignSelf: "center",
+            }}
+          >
+            <a href="https://www.sno.org/" target="_blank">
+              <RoundImage filename="sno-baker.png" />
+            </a>
+            <a href="https://www.sno.org/" target="_blank">
+              <h5>SNO - Baker</h5>
+            </a>
+
+            <a href="https://www.sno.org/meditation-practices" target="_blank">
+              <RoundImage filename="meditation.png" />
+            </a>
+            <a href="https://www.sno.org/meditation-practices" target="_blank">
+              <h5>Meditation Practices</h5>
+            </a>
           </Col>
-          <Col md={2}></Col>
-          <Col md={5}>
+          <Col
+            md={6}
+            style={{
+              textAlign: "center",
+              justifyContent: "center",
+              alignSelf: "center",
+            }}
+          >
+            <h2>Living in an Energy World</h2>
             <Video
-              videoSrcURL={"https://www.youtube.com/embed/AX4VAUIWvUE"}
+              videoSrcURL={"https://www.youtube.com/embed/QmphXFF8JGg"}
               videoTitle={"Vitvan - The Power to be Conscious"}
             />
           </Col>
+          <Col
+            md={3}
+            style={{
+              textAlign: "center",
+              justifyContent: "center",
+              alignSelf: "center",
+            }}
+          >
+
+          <a href="https://www.sno.org/single-audio-lessons" target="_blank">
+              <RoundImage filename="vitvan-media.png" />
+            </a>
+            <a href="https://www.sno.org/single-audio-lessons" target="_blank">
+              <h5>Media Files</h5>
+            </a>
+            <a href="https://www.insighttimer.com" target="_blank">
+              <RoundImage filename="insighttimer.png" />
+            </a>
+            <a href="https://www.insighttimer.com" target="_blank">
+              <h5>Insight Timer</h5>
+            </a>
+            
+          </Col>
         </Row>
-        
       </Container>
     </Layout>
   )
