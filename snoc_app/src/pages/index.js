@@ -31,7 +31,7 @@ const IndexPage = props => {
         </div>
       </BackgroundImage>
       <Container fluid="md">
-        <Row>
+        <Row style={{marginBottom: "200px"}} className="topic">
           <Col
             md={3}
             style={{

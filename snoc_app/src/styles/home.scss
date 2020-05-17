@@ -1,3 +1,26 @@
 .home-container{
     margin: 0 150px 0 150px;
 }
+.rounded-circle:hover{
+    animation: in-focus 4s linear;
+ }
+ .topic{
+     height: 500px;
+ }
+ img:hover{
+    animation: in-focus 4s linear;
+ }
+ @keyframes in-focus {
+    0%   { 
+      height: 150px;
+      width: 150px;
+    }
+    5% { 
+      height: 168px;
+      width: 168px;
+    }
+    100% { 
+      height: 170px;
+      width: 170px;
+    }
+  }
