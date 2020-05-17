@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{yPWn:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),r=t.n(a),u=(t("1eu9"),t("Wbzz"),t("Bl7J")),c=t("vrFN");n.default=function(){return r.a.createElement(u.a,null,r.a.createElement(c.a,{title:"Other"}))}}}]);
+//# sourceMappingURL=component---src-pages-other-js-343851ab4955e5d378be.js.map
