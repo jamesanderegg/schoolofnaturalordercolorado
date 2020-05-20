@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{yPWn:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),r=t.n(a),c=(t("1eu9"),t("Wbzz"),t("Bl7J")),l=t("vrFN");n.default=function(){return r.a.createElement(c.a,null,r.a.createElement(l.a,{title:"Other"}),r.a.createElement("h1",{style:{marginTop:"300px"}},"Under Construction"))}}}]);
+//# sourceMappingURL=component---src-pages-other-js-80c64edf35ac91ba173b.js.map
