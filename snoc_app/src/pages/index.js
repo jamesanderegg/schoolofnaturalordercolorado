@@ -31,7 +31,7 @@ const IndexPage = props => {
         </div>
       </BackgroundImage>
       <Container fluid="md">
-        <Row style={{marginBottom: "200px"}} className="topic">
+        <Row className="topic">
           <Col
             md={3}
             style={{
@@ -40,17 +40,17 @@ const IndexPage = props => {
               alignSelf: "center",
             }}
           >
-            <a href="https://www.sno.org/" target="_blank">
+            <a href="https://www.sno.org/" target="_blank" rel="noopener noreferrer">
               <RoundImage filename="sno-baker.png" />
             </a>
-            <a href="https://www.sno.org/" target="_blank">
+            <a href="https://www.sno.org/" target="_blank"rel="noopener noreferrer">
               <h5>SNO - Baker</h5>
             </a>
 
-            <a href="https://www.sno.org/meditation-practices" target="_blank">
+            <a href="https://www.sno.org/meditation-practices" target="_blank" rel="noopener noreferrer">
               <RoundImage filename="meditation.png" />
             </a>
-            <a href="https://www.sno.org/meditation-practices" target="_blank">
+            <a href="https://www.sno.org/meditation-practices" target="_blank" rel="noopener noreferrer">
               <h5>Meditation Practices</h5>
             </a>
           </Col>
@@ -77,16 +77,16 @@ const IndexPage = props => {
             }}
           >
 
-          <a href="https://www.sno.org/single-audio-lessons" target="_blank">
-              <RoundImage filename="vitvan-media.png" />
+          <a href="https://www.sno.org/single-audio-lessons" target="_blank" rel="noopener noreferrer">
+              <RoundImage filename="young-vitvan.png" />
             </a>
-            <a href="https://www.sno.org/single-audio-lessons" target="_blank">
+            <a href="https://www.sno.org/single-audio-lessons" target="_blank" rel="noopener noreferrer">
               <h5>Media Files</h5>
             </a>
-            <a href="https://www.insighttimer.com" target="_blank">
+            <a href="https://www.insighttimer.com" target="_blank" rel="noopener noreferrer">
               <RoundImage filename="insighttimer.png" />
             </a>
-            <a href="https://www.insighttimer.com" target="_blank">
+            <a href="https://www.insighttimer.com" target="_blank" rel="noopener noreferrer">
               <h5>Insight Timer</h5>
             </a>
             

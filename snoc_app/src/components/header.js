@@ -7,6 +7,8 @@ import {
   NavItem,
   NavLink,
   NavbarText,
+  Row,
+  Col,
 } from "reactstrap"
 
 const Header = ({ siteTitle }) => {
@@ -19,26 +21,40 @@ const Header = ({ siteTitle }) => {
   return (
     <div>
       <Navbar fixed="top" light expand="sm">
-        <div className="container-fluid">
-          <NavbarText>{siteTitle}</NavbarText>
-          <NavbarToggler onClick={toggle} />
-          <Collapse isOpen={isOpen} navbar>
-            <Nav className="ml-auto" navbar>
-              <NavItem>
-                <NavLink href="/">Home</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/About">About</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/meditation">Meditation</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/other">Contact</NavLink>
-              </NavItem>
-            </Nav>
-          </Collapse>
-        </div>
+        <Row>
+        <Col
+            xs={9}
+            style={{
+              textAlign: "center",
+              justifyContent: "center",
+              alignSelf: "center",
+              
+            }}>
+            <NavbarText>{siteTitle}</NavbarText>
+          </Col>
+          <Col style={{
+              textAlign: "center",
+              justifyContent: "center",
+              alignSelf: "center",}}>
+            <NavbarToggler onClick={toggle} />
+          </Col>
+        </Row>
+        <Collapse isOpen={isOpen} navbar>
+          <Nav className="ml-auto" navbar>
+            <NavItem>
+              <NavLink href="/">Home</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/about">About</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/meditation">Meditation</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/other">Contact</NavLink>
+            </NavItem>
+          </Nav>
+        </Collapse>
       </Navbar>
     </div>
   )

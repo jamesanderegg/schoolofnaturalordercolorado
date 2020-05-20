@@ -9,7 +9,7 @@ const OtherPage = () => {
   return(
   <Layout>
     <SEO title="Other" />
-    
+    <h1 style={{marginTop: "300px"}}>Under Construction</h1>
   </Layout>
 )}
 

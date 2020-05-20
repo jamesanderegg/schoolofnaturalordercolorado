@@ -9,7 +9,7 @@ const MeditationPage = () => {
   return(
   <Layout>
     <SEO title="Meditation" />
-    
+    <h1 style={{marginTop: "300px"}}>Under Construction</h1>
   </Layout>
 )}
 

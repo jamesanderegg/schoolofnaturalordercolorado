@@ -9,6 +9,7 @@ const AboutPage = () => {
   return(
   <Layout>
     <SEO title="About" />
+    <h1 style={{marginTop: "300px"}}>Under Construction</h1>
     
   </Layout>
 )}
