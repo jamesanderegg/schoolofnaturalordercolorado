@@ -11,6 +11,7 @@ const Video = ({ videoSrcURL, videoTitle, ...props }) => (
       webkitallowfullscreen="true"
       mozallowfullscreen="true"
       allowFullScreen
+      rel="0"
     />
   </div>
 )

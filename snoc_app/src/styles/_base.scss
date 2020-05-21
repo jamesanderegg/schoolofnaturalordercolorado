@@ -6,20 +6,20 @@ body {
   font-family: $site-font;
 }
 a {
-  color: black;
+  color: whitesmoke;
   &:hover {
-    color: #005abb;
+    color: #86b8ec;
     text-decoration: none;
   }
 }
 h1 {
-  letter-spacing: 5px;
-  margin-bottom: 30px;
+  letter-spacing: 2px;
+  margin-bottom: 0px;
   text-align: center;
 }
 h3 {
-  letter-spacing: 2px;
-  margin-bottom: 30px;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
   text-align: center;
 }
 .navbar {

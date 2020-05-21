@@ -1,20 +1,18 @@
 import React from "react"
 import BackgroundImage from "gatsby-background-image"
 import { graphql } from "gatsby"
-import Layout from "../components/layout"
+
 import SEO from "../components/seo"
 
-import { Link } from "react-router-dom"
-import Video from "../components/video"
-import { Container, Row, Col } from "reactstrap"
+import NavbarCirles from "../components/navbarCircles"
 
-import RoundImage from "../components/roundImage"
+import Footer from "../components/footer"
+import TextVideo from "../components/textVideo"
 
-import "../styles/home.scss"
 
 const IndexPage = props => {
   return (
-    <Layout>
+    <>
       <SEO title="Home" />
       <BackgroundImage
         className="masthead"
@@ -22,78 +20,23 @@ const IndexPage = props => {
       >
         <div className="black-overlay">
           <div className="content-box">
-            <h1>The Teachings of Vitvan</h1>
-            <h3>The Power to be Conscious</h3>
+            <h1>The School of The Natural Order</h1>
+            <h3>Colorado Chapter</h3>
+            <h3>The Teachings of Vitvan</h3>
             <p style={{ marginTop: "15px" }}>
               Changing Attitudes Towards Everything
             </p>
-          </div>
-        </div>
-      </BackgroundImage>
-      <Container fluid="md">
-        <Row className="topic">
-          <Col
-            md={3}
-            style={{
-              textAlign: "center",
-              justifyContent: "center",
-              alignSelf: "center",
-            }}
-          >
-            <a href="https://www.sno.org/" target="_blank" rel="noopener noreferrer">
-              <RoundImage filename="sno-baker.png" />
-            </a>
-            <a href="https://www.sno.org/" target="_blank"rel="noopener noreferrer">
-              <h5>SNO - Baker</h5>
-            </a>
-
-            <a href="https://www.sno.org/meditation-practices" target="_blank" rel="noopener noreferrer">
-              <RoundImage filename="meditation.png" />
-            </a>
-            <a href="https://www.sno.org/meditation-practices" target="_blank" rel="noopener noreferrer">
-              <h5>Meditation Practices</h5>
-            </a>
-          </Col>
-          <Col
-            md={6}
-            style={{
-              textAlign: "center",
-              justifyContent: "center",
-              alignSelf: "center",
-            }}
-          >
-            <h2>Living in an Energy World</h2>
-            <Video
-              videoSrcURL={"https://www.youtube.com/embed/QmphXFF8JGg"}
-              videoTitle={"Vitvan - The Power to be Conscious"}
-            />
-          </Col>
-          <Col
-            md={3}
-            style={{
-              textAlign: "center",
-              justifyContent: "center",
-              alignSelf: "center",
-            }}
-          >
-
-          <a href="https://www.sno.org/single-audio-lessons" target="_blank" rel="noopener noreferrer">
-              <RoundImage filename="young-vitvan.png" />
-            </a>
-            <a href="https://www.sno.org/single-audio-lessons" target="_blank" rel="noopener noreferrer">
-              <h5>Media Files</h5>
-            </a>
-            <a href="https://www.insighttimer.com" target="_blank" rel="noopener noreferrer">
-              <RoundImage filename="insighttimer.png" />
-            </a>
-            <a href="https://www.insighttimer.com" target="_blank" rel="noopener noreferrer">
-              <h5>Insight Timer</h5>
-            </a>
             
-          </Col>
-        </Row>
-      </Container>
-    </Layout>
+        <NavbarCirles />
+        
+          </div>
+          
+        </div>
+        
+      </BackgroundImage>
+      <TextVideo url="https://www.youtube.com/embed/AX4VAUIWvUE" title="Vitvan - The Power to be Conscious" />
+      <Footer />
+    </>
   )
 }
 

@@ -1,10 +1,11 @@
 import React from "react"
 import Video from "../components/video"
-import { Row, Col } from "reactstrap"
+import { Row, Col, Container } from "reactstrap"
 
 {/* <TextVideo url="https://www.youtube.com/embed/AX4VAUIWvUE" title="Vitvan - The Power to be Conscious" /> */}
 
 const TextVideo = ({ url, title }) => (
+  <Container>
   <Row>
           <Col md={6} style={{ textAlign: "center", justifyContent:"center", alignSelf: "center"}}>
             <h3>The Power to Be Conscious</h3>
@@ -34,6 +35,7 @@ const TextVideo = ({ url, title }) => (
             />
           </Col>
         </Row>
+        </Container>
 )
 export default TextVideo
 
