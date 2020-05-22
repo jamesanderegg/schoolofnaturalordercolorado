@@ -51,7 +51,7 @@ const Header = ({ siteTitle }) => {
               <NavLink href="/meditation">Meditation</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/other">Contact</NavLink>
+              <NavLink href="/contact">Contact</NavLink>
             </NavItem>
           </Nav>
         </Collapse>

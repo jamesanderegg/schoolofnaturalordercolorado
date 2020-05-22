@@ -12,7 +12,7 @@ const RoundImage = props => (
               relativePath
               name
               childImageSharp {
-                fixed(width: 100, height: 100) {
+                fixed(width: 95, height: 95) {
                   ...GatsbyImageSharpFixed
                 }
               }

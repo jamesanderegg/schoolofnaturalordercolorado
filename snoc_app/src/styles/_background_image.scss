@@ -7,6 +7,54 @@
     background-attachment: fixed;
     margin-bottom: 70px;
     position: static;
+    @media screen and (max-width: 580px) {
+        height: 100vh;
+    }
+    @media screen and (max-width: 360px){
+        height: 115vh;
+    }
+    @media screen and (max-width: 270px){
+        height: 160vh;
+    }
+    
+    @media screen and (max-height: 620px) and(max-width: 570px){
+        height: 115vh;
+    }
+    @media screen and (max-height: 580px) and(max-width: 570px){
+        height: 125vh;
+    }
+
+
+    @media screen and (max-height: 530px) and(max-width: 570px){
+        height: 135vh;
+    }
+    @media screen and (max-height: 490px) and(max-width: 570px){
+        height: 145vh;
+    }
+    @media screen and (max-height: 450px) and(max-width: 570px){
+        height: 165vh;
+    }
+    @media screen and (max-height: 400px) and(max-width: 570px){
+        height: 185vh;
+    }
+    @media screen and (max-height: 360px) and(max-width: 570px){
+        height: 230vh;
+    }
+    @media screen and (max-height: 295px) and(max-width: 570px){
+        height: 300vh;
+    }
+
+    @media screen and (max-height: 430px) and (min-width: 571px){
+        height: 115vh;
+    }
+    @media screen and (max-height: 400px) and (min-width: 571px){
+        height: 125vh;
+    }
+    @media screen and (max-height: 370px) and (min-width: 571px){
+        height: 155vh;
+    }
+
+   
     
 }
 
@@ -23,5 +71,18 @@
 .content-box {
     max-width: 700px;
     margin:  auto;
-    margin-top: 10%;
+    margin-top: 200px;
+    height: 100vh;
+    @media screen and (max-height: 600px){
+        margin-top: 100px;  
+    }
+    @media screen and (max-height: 500px){
+        margin-top: 10px;
+        
+    }
+    @media screen and (max-width: 680px){
+        margin-top: 10px;
+        
+    }
+    
 }

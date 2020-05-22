@@ -27,8 +27,10 @@ const IndexPage = props => {
               Changing Attitudes Towards Everything
             </p>
             
-        <NavbarCirles />
-        
+            <NavbarCirles />
+            
+            {/* <div className="arrow-down"></div>
+            <h7>Scroll Down</h7> */}
           </div>
           
         </div>
