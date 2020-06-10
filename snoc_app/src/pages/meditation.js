@@ -13,7 +13,7 @@ const MeditationPage = () => {
     <Layout>
       <SEO title="Meditation" />
       <Container style={{marginBottom: "100px"}}>
-        <h1>
+        <h1 className="title">
           Meditation as taught in The School of The Natural Order
         </h1>
         <p style={{ textAlign: "center" }}>

@@ -21,21 +21,24 @@ const IndexPage = props => {
         <div className="black-overlay">
           <div className="content-box">
             <h1>The School of The Natural Order</h1>
-            <h3>Colorado Chapter</h3>
+            <h2>of Colorado</h2>
             <h3>The Teachings of Vitvan</h3>
-            <p style={{ marginTop: "15px" }}>
+            <h4 style={{ marginTop: "30px" }}>
               Changing Attitudes Towards Everything
-            </p>
+            </h4>
             
-            <NavbarCirles />
+            
             
             {/* <div className="arrow-down"></div>
             <h7>Scroll Down</h7> */}
           </div>
           
+          
         </div>
         
       </BackgroundImage>
+      <NavbarCirles />
+      
       <TextVideo url="https://www.youtube.com/embed/AX4VAUIWvUE" title="Vitvan - The Power to be Conscious" />
       <Footer />
     </>

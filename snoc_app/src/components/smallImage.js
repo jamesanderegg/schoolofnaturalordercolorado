@@ -12,7 +12,7 @@ const SmallImage = props => (
               relativePath
               name
               childImageSharp {
-                fixed(width: 80, height: 80) {
+                fixed(width: 150, height: 150) {
                   ...GatsbyImageSharpFixed
                 }
               }

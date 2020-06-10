@@ -12,7 +12,7 @@ const AboutPage = () => {
     <Layout>
       <SEO title="About" />
       <Container>
-        <h1>The Schools Beginning</h1>
+        <h1 className="title">The Schools Beginning</h1>
         <p>
           The School began in Los Angeles in 1922 and at that time was called
           the School of the Sacred Science... It was founded by Ralph M. deBit

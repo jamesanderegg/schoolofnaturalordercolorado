@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `The School of The Natural Order, Colorado Chapter`,
+    title: `The School of The Natural Order of Colorado`,
     description: `A website for The School of The Natural Order`,
     author: `@DataFluent`,
   },

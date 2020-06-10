@@ -15,39 +15,56 @@ import "../styles/navbarCircles.scss"
 import SmallImage from "./smallImage"
 
 const NavbarCircles = () => (
- 
- <>
-    <Row className="circle-links">
-        <ul>
-            <li>
-            
-            <NavLink href="/meditation"><RoundImage filename="sno-baker.png" /></NavLink>
-            <NavLink href="/meditation"><h6>Meditation</h6></NavLink>
-            </li>
-            <li>
-            <NavLink href="/contact"><RoundImage filename="meditation.png" /></NavLink>
-            <NavLink href="/contact"><h6>Contact</h6></NavLink>
-            </li>
-            </ul>
-            
-            
-            
-            <ul>
-            <li>
-            <a href="https://www.sno.org/books-and-mp3s" target="_blank" rel="noopener noreferrer"><RoundImage filename="young-vitvan.png" /></a>
-            <NavLink href="/meditation"><h6>SNO Media</h6></NavLink>
-            </li>
-            <li>
-            <NavLink href="/about"><RoundImage filename="color-logo.png" /></NavLink>
-            <NavLink href="/about"><h6>About</h6></NavLink>
-            </li>
-        </ul>
-        
-    </Row>
-    
-    
- 
- </>
+  
+    <ul className="circle-links">
+      <li>
+        <NavLink href="/meditation">
+          <h5>Meditation</h5>
+        </NavLink>
+        <NavLink href="/meditation">
+          <RoundImage filename="sno-baker.png" />
+        </NavLink>
+      </li>
+      <li>
+        <NavLink href="/contact">
+          <h5>Contact</h5>
+        </NavLink>
+        <NavLink href="/contact">
+          <RoundImage filename="meditation.png" />
+        </NavLink>
+      </li>
+
+      <li>
+        <NavLink href="/about">
+          <h5>About</h5>
+        </NavLink>
+        <NavLink href="/about">
+          <SmallImage filename="black-logo.png" />
+        </NavLink>
+      </li>
+
+      <li>
+        <NavLink href="/meditation">
+          <h5>SNO Media</h5>
+        </NavLink>
+        <NavLink
+          href="https://www.sno.org/books-and-mp3s"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <RoundImage filename="young-vitvan.png" />
+        </NavLink>
+      </li>
+      <li>
+        <NavLink href="/schedule">
+        <h5>Class Schedule</h5>
+        </NavLink>
+        <NavLink href="/schedule">
+          <RoundImage filename="meditation.png" />
+        </NavLink>
+      </li>
+    </ul>
+  
 )
 export default NavbarCircles
 
