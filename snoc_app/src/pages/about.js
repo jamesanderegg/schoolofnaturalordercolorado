@@ -7,13 +7,56 @@ import SEO from "../components/seo"
 import { Container, Col, Row } from "reactstrap"
 import "../styles/page_content.scss"
 
+import LargeImage from "../components/largeImage"
+
 const AboutPage = () => {
   return (
     <Layout>
       <SEO title="About" />
       <Container>
-        <h1 className="title">The Schools Beginning</h1>
-        <p>
+        <Row style={{ marginTop: "180px" }}>
+          <Col
+            md={5}
+            style={{
+              textAlign: "center",
+              justifyContent: "center",
+              alignSelf: "center",
+            }}
+          >
+            <LargeImage filename="color-logo.png" />
+          </Col>
+          <Col
+            md={7}
+            style={{
+              textAlign: "center",
+              justifyContent: "center",
+              alignSelf: "center",
+            }}
+          >
+            <h3>The Logo</h3>
+            <p>
+              The eagle, with a serpent coiled around its neck has been the
+              school’s logo since its inception as the School of the Sacred
+              Science in the 1920’s.
+            </p>
+            <ul>
+              <p>The serpent and eagle are ancient symbols:</p>
+              <li>
+                --The serpent representative of wisdom; its coiled form suggestive
+                of the power latent in the sacral center (the Greeks called it
+                the Power of the Christos).
+              </li>
+              <li>
+              --The eagle represents ‘spiritual’ vision.  It was supposed to be the only creature that could look directly into the sun.
+              </li>
+            </ul>
+            <p>We use these symbols as our logo:  the eagle (‘spiritual’ vision) carrying the serpent (Christos Power) to “great heights”, the ascent of the force to the crown center.</p>
+          </Col>
+        </Row>
+        <br />
+        <h3>The Schools Beginning</h3>
+        <Row>
+          <Col md={6}><p>
           The School began in Los Angeles in 1922 and at that time was called
           the School of the Sacred Science... It was founded by Ralph M. deBit
           who was born in Kansas in 1883. He was raised in a Methodist family
@@ -26,6 +69,11 @@ const AboutPage = () => {
           Mozumdar who became his teacher. He spent seven years of work and
           study with him.
         </p>
+        </Col>
+        <Col md={6}>
+        
+        </Col>
+        </Row>
         <p>
           Toward the last half of the 19th century, there was a reappearance of
           the pre-Christian gnosis and the Wisdom Teaching as it had been
@@ -42,7 +90,9 @@ const AboutPage = () => {
           during the winter to travel and lecture, and return to in the summer
           to teach seminars and classes.
         </p>
-        <p>
+        <Row>
+          <Col md={6}></Col>
+          <Col md={6}><p>
           During this period of his life, Vitvan was growing increasingly
           dissatisfied with the presentation of the Wisdom Teachings in the
           older metaphysical, occult and mystical framework that he felt did not
@@ -60,7 +110,10 @@ const AboutPage = () => {
           reorganized the School as the School of the Natural Order, and began
           to completely rewrite everything he had previously written to conform
           with the new structure he perceived.
-        </p>
+        </p></Col>
+
+        </Row>
+        
         <p>
           The current literature of the School of the Natural Order was either
           written as lessons in the 1940s, or transcribed from lectures that

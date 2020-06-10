@@ -44,15 +44,13 @@ const NavbarCircles = () => (
       </li>
 
       <li>
-        <NavLink href="/meditation">
+        <NavLink href="https://www.sno.org/books-and-mp3s">
           <h5>SNO Media</h5>
         </NavLink>
         <NavLink
           href="https://www.sno.org/books-and-mp3s"
-          target="_blank"
-          rel="noopener noreferrer"
         >
-          <RoundImage filename="young-vitvan.png" />
+          <RoundImage filename="rainbow.png" />
         </NavLink>
       </li>
       <li>
@@ -60,7 +58,7 @@ const NavbarCircles = () => (
         <h5>Class Schedule</h5>
         </NavLink>
         <NavLink href="/schedule">
-          <RoundImage filename="meditation.png" />
+          <RoundImage filename="young-vitvan.png" />
         </NavLink>
       </li>
     </ul>
