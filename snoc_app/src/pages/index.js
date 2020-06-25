@@ -40,7 +40,7 @@ const IndexPage = props => {
       </BackgroundImage>
       <NavbarCirles />
       {/* https://www.youtube.com/playlist?list=PLJ1-WavEHjzmhtMsK4Fi46FyWrzbiflJ_ */}
-      <TextVideo url="https://www.youtube.com/embed/AX4VAUIWvUE?rel=0&listType=user_uploads&list=School of the Natural Order of Colorado" title="Vitvan - The Power to be Conscious" />
+      <TextVideo url="https://www.youtube.com/embed/AX4VAUIWvUE?rel=0" title="Vitvan - The Power to be Conscious" />
       <Footer />
     </>
   )
