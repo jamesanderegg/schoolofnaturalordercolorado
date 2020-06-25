@@ -24,13 +24,14 @@ const IndexPage = props => {
             <h2>of Colorado</h2>
             <h3>The Teachings of Vitvan</h3>
             <h4 style={{ marginTop: "30px" }}>
-              Changing Attitudes Towards Everything
+              
             </h4>
             
             
             
-            {/* <div className="arrow-down"></div>
-            <h7>Scroll Down</h7> */}
+            <div className="arrow-down"></div>
+            <h7 className="scroll-text">Scroll Down</h7>
+            
           </div>
           
           
@@ -38,8 +39,8 @@ const IndexPage = props => {
         
       </BackgroundImage>
       <NavbarCirles />
-      
-      <TextVideo url="https://www.youtube.com/embed/AX4VAUIWvUE" title="Vitvan - The Power to be Conscious" />
+      {/* https://www.youtube.com/playlist?list=PLJ1-WavEHjzmhtMsK4Fi46FyWrzbiflJ_ */}
+      <TextVideo url="https://www.youtube.com/embed/AX4VAUIWvUE?rel=0&listType=user_uploads&list=School of the Natural Order of Colorado" title="Vitvan - The Power to be Conscious" />
       <Footer />
     </>
   )
