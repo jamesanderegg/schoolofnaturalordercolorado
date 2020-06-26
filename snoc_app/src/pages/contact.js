@@ -16,7 +16,7 @@ const ContactPage = () => {
       
         <h1 style={{ marginTop: "190px" }}>Contact us</h1>
         <br />
-        <Row>
+        <Row style={{margin: "0 100px"}}>
         <Col
             md={7}
             
