@@ -6,9 +6,9 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     // padding: 6%;
-    margin: 20px auto;
+    margin: 30px;
     position: relative; 
-    height: 95vh;
+    height: 97vh;
 }
 
 .black-overlay {
@@ -44,21 +44,17 @@
     border-top: 12px solid rgb(255, 255, 255);
     margin: auto;
     position:absolute;
-    left: 47%;
+    left: 48%;
     bottom: 7px;
   }
   .arrow-down-right {
     height: 0; 
     border-left: 12px solid transparent;
-    border-right: 20px solid transparent;
+    border-right: 12px solid transparent;
     border-top: 12px solid rgb(255, 255, 255);
     margin: auto;
     position:absolute;
-    left: 53%;
+    left: 52%;
     bottom: 7px;
   }
-  .scroll-text{
-    position:absolute;
-    bottom:1px;
-    right:50px;
-  }
+ 
