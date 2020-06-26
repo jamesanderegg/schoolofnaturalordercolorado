@@ -5,7 +5,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding: 6%;
+    // padding: 6%;
     margin: 20px auto;
     position: relative; 
     height: 95vh;
@@ -29,16 +29,33 @@
 }
 .arrow-down {
     height: 0; 
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 20px solid rgb(255, 255, 255);
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid rgb(255, 255, 255);
     margin: auto;
     position:absolute;
-    bottom:7px;
-    right:10px;
-
-    
-    
+    left: 50%;
+    bottom: 7px;
+  }
+  .arrow-down-left {
+    height: 0; 
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid rgb(255, 255, 255);
+    margin: auto;
+    position:absolute;
+    left: 47%;
+    bottom: 7px;
+  }
+  .arrow-down-right {
+    height: 0; 
+    border-left: 12px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 12px solid rgb(255, 255, 255);
+    margin: auto;
+    position:absolute;
+    left: 53%;
+    bottom: 7px;
   }
   .scroll-text{
     position:absolute;

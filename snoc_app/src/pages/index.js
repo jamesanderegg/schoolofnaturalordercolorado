@@ -22,16 +22,13 @@ const IndexPage = props => {
           <div className="content-box">
             <h1>The School of The Natural Order</h1>
             <h2>of Colorado</h2>
-            <h3>The Teachings of Vitvan</h3>
-            <h4 style={{ marginTop: "30px" }}>
-              
-            </h4>
+            <h3 style={{ marginTop: "60px" }}>The Teachings of Vitvan</h3>
             
             
-            
+
+            <div className="arrow-down-right"></div>
             <div className="arrow-down"></div>
-            <h7 className="scroll-text">Scroll Down</h7>
-            
+            <div className="arrow-down-left"></div>
           </div>
           
           

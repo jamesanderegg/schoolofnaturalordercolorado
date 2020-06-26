@@ -25,8 +25,7 @@ const AboutPage = () => {
           >
             <LargeImage filename="black-logo.png" />
             <br />
-            <br />
-            <br />
+            
             
             <h4 style={{fontStyle: 'italic', fontWeight: 'bold'}}> Sortem Suam Quisque Amet</h4>
             <h6 style={{fontStyle: 'italic'}}>("Let each one love his own destiny")</h6>
@@ -39,14 +38,14 @@ const AboutPage = () => {
               alignSelf: "center",
             }}
           >
-            <h3>The Logo</h3>
+            
             <p>
               The eagle, with a serpent coiled around its neck has been the
               school’s logo since its inception as the School of the Sacred
               Science in the 1920’s.
             </p>
             <ul>
-              <p>The serpent and eagle are ancient symbols:</p>
+              <p style={{ fontWeight: 'bold'}}>The serpent and eagle are ancient symbols:</p>
               <li>
                 --The serpent representative of wisdom; its coiled form suggestive
                 of the power latent in the sacral center (the Greeks called it
@@ -60,7 +59,7 @@ const AboutPage = () => {
           </Col>
         </Row>
         <br />
-        <h3>The Schools Beginning</h3>
+        <h3 style={{ fontWeight: 'bold'}}>The Schools Beginning</h3>
         <Row>
           <Col md={6}><p>
           The School began in Los Angeles in 1922 and at that time was called
@@ -76,8 +75,13 @@ const AboutPage = () => {
           study with him.
         </p>
         </Col>
-        <Col md={6}>
+        <Col md={6} style={{
+              textAlign: "center",
+              justifyContent: "center",
+              alignSelf: "center",
+            }}>
         <LargeImage filename="vitvan-at-table.png" />
+        <h6 style={{fontStyle: 'italic', textAlign: 'center', fontWeight: 'bold'}}>Vitvan</h6>
         </Col>
         </Row>
         <p>
@@ -97,10 +101,21 @@ const AboutPage = () => {
           to teach seminars and classes.
         </p>
         <Row>
-          <Col md={6}>
+          <Col md={6} style={{
+              textAlign: "center",
+              justifyContent: "center",
+              alignSelf: "center",
+            }} >
           <LargeImage filename="dr-john.png" />
+          <h6 style={{fontStyle: 'italic', textAlign: 'center', fontWeight: 'bold'}}>Dr. John Gozzi </h6>
+          <p style={{fontStyle: 'italic', textAlign: 'center', fontWeight: 'bold'}}>The Colorado Chapter of the School of the Natural Order was founded by Dr. John Gozzi in 1978, one of Vitvan's longtime and closest students.</p>
+
           </Col>
-          <Col md={6}><p>
+          <Col md={6} style={{
+              textAlign: "center",
+              justifyContent: "center",
+              alignSelf: "center",
+            }}><p>
           During this period of his life, Vitvan was growing increasingly
           dissatisfied with the presentation of the Wisdom Teachings in the
           older metaphysical, occult and mystical framework that he felt did not
@@ -118,8 +133,9 @@ const AboutPage = () => {
           reorganized the School as the School of the Natural Order, and began
           to completely rewrite everything he had previously written to conform
           with the new structure he perceived.
-        </p></Col>
-
+        </p>
+        </Col>
+        
         </Row>
         
         <p>
@@ -137,7 +153,6 @@ const AboutPage = () => {
           locations: one in Baker, Nevada, and one in Denver, Colorado. There
           are also study groups in California and around the country
         </p>
-        <p>The Colorado Chapter of the School of the Natural Order was founded by Dr. John Gozzi in 1978, one of Vitvan's longtime and closest students.</p>
       </Container>
     </Layout>
   )
