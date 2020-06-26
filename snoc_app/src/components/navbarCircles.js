@@ -22,7 +22,7 @@ const NavbarCircles = () => (
           <h5>Meditation</h5>
         </NavLink>
         <NavLink href="/meditation">
-          <RoundImage filename="rainbow.png" />
+          <RoundImage filename="lightning.png" />
         </NavLink>
       </li>
       <li>
@@ -58,7 +58,7 @@ const NavbarCircles = () => (
         <h5>Class Schedule</h5>
         </NavLink>
         <NavLink href="/schedule">
-          <RoundImage filename="young-vitvan.png" />
+          <RoundImage filename="vitvan-portrait.png" />
         </NavLink>
       </li>
     </ul>

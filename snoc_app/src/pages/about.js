@@ -23,7 +23,13 @@ const AboutPage = () => {
               alignSelf: "center",
             }}
           >
-            <LargeImage filename="color-logo.png" />
+            <LargeImage filename="black-logo.png" />
+            <br />
+            <br />
+            <br />
+            
+            <h4 style={{fontStyle: 'italic', fontWeight: 'bold'}}> Sortem Suam Quisque Amet</h4>
+            <h6 style={{fontStyle: 'italic'}}>("Let each one love his own destiny")</h6>
           </Col>
           <Col
             md={7}
@@ -71,7 +77,7 @@ const AboutPage = () => {
         </p>
         </Col>
         <Col md={6}>
-        
+        <LargeImage filename="vitvan-at-table.png" />
         </Col>
         </Row>
         <p>
@@ -91,7 +97,9 @@ const AboutPage = () => {
           to teach seminars and classes.
         </p>
         <Row>
-          <Col md={6}></Col>
+          <Col md={6}>
+          <LargeImage filename="dr-john.png" />
+          </Col>
           <Col md={6}><p>
           During this period of his life, Vitvan was growing increasingly
           dissatisfied with the presentation of the Wisdom Teachings in the
@@ -129,6 +137,7 @@ const AboutPage = () => {
           locations: one in Baker, Nevada, and one in Denver, Colorado. There
           are also study groups in California and around the country
         </p>
+        <p>The Colorado Chapter of the School of the Natural Order was founded by Dr. John Gozzi in 1978, one of Vitvan's longtime and closest students.</p>
       </Container>
     </Layout>
   )
