@@ -76,6 +76,15 @@ const ClassSchedule = () => {
             </CardText>
           </CardBody>
         </Card>
+        <Card style={{ width: "18rem" }}>
+          <CardBody>
+            <CardTitle> Expanding States of Self Awareness</CardTitle>
+            <CardSubtitle className="mb-2 text-muted">by Vitvan</CardSubtitle>
+            <CardText>
+            Every Sunday at 12:00 pm (MST)
+            </CardText>
+          </CardBody>
+        </Card>
       </CardDeck>
       <p>Please visit the contact page to sign up for classes </p>
       <h3><Link to="/contact" className="link">

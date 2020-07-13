@@ -18,6 +18,7 @@ const AboutPage = () => {
           <Col
             md={5}
             style={{
+              padding: "40px 0px",
               textAlign: "center",
               justifyContent: "center",
               alignSelf: "center",
@@ -33,6 +34,7 @@ const AboutPage = () => {
           <Col
             md={7}
             style={{
+              padding: "40px 0px",
               textAlign: "center",
               justifyContent: "center",
               alignSelf: "center",
@@ -76,6 +78,7 @@ const AboutPage = () => {
         </p>
         </Col>
         <Col md={6} style={{
+          padding: "40px 0px",
               textAlign: "center",
               justifyContent: "center",
               alignSelf: "center",
@@ -102,6 +105,7 @@ const AboutPage = () => {
         </p>
         <Row>
           <Col md={6} style={{
+            padding: "40px 0px",
               textAlign: "center",
               justifyContent: "center",
               alignSelf: "center",
@@ -112,6 +116,7 @@ const AboutPage = () => {
 
           </Col>
           <Col md={6} style={{
+            padding: "40px 0px",
               textAlign: "center",
               justifyContent: "center",
               alignSelf: "center",

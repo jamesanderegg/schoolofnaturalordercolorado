@@ -4,6 +4,9 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import LargeImage from "../components/largeImage"
+import ChartImage from "../components/chartImage"
+import Video from "../components/video"
 
 import '../styles/page_content.scss'
 import { Container, Col, Row } from "reactstrap"
@@ -47,7 +50,12 @@ const MeditationPage = () => {
               functioning upon any level.
             </p>
           </Col>
-          <Col>{/* PICTURE */}</Col>
+          <Col md={6} style={{
+            padding: "40px 0px",
+              textAlign: "center",
+              justifyContent: "center",
+              alignSelf: "center",
+            }}><LargeImage filename="vitvan-at-table-2.png" /></Col>
         </Row>
         <p>
           The next step after that thought is established is breath. One must
@@ -83,7 +91,12 @@ const MeditationPage = () => {
           You’ll stir up something so you can have a good quarrel.
         </p>
         <Row>
-          <Col>{/* PICTURE */}</Col>
+        <Col md={6} style={{
+          padding: "40px 0px",
+              textAlign: "center",
+              justifyContent: "center",
+              alignSelf: "center",
+            }}><ChartImage filename="chart.png" /></Col>
           <Col>
             <p>
               Those are two of the symbols that characterize the functions of a
@@ -212,7 +225,15 @@ const MeditationPage = () => {
           function on that level, responsively, one with another.
         </p>
         <Row>
-          <Col>{/* PICTURE */}</Col>
+        <Col md={6} style={{
+          padding: "40px 0px",
+              textAlign: "center",
+              justifyContent: "center",
+              alignSelf: "center",
+            }}><Video
+              videoSrcURL="https://www.youtube.com/embed/ZYWkoBNsKqk"
+              videoTitle="Getting Functional with Vitvan - A Meditation Practice"
+            /></Col>
           <Col>
             <p>
             The force does not remain on that level. It rises. Notice the three lines running up through the circles on the chart. The outside two lines, like the negative and positive lines of force, spiral upward. One turns one way end one the other. That is the ancient symbol of the caduceus, Hermes’ staff. Our modern medical association has adopted that ancient symbol. I wonder if they understand it. One cannot function on a relatively higher level without the energy with which to function. So little by little those currents are directed upward, until “where three ways meet, go into Jerusalem” (go into the kingdom), “and in an upper room” (notice the symbolism) “prepare the last supper” (the death of the personality, the resurrection of consciousness in the Light.) Read that Good Book. It’s all there.

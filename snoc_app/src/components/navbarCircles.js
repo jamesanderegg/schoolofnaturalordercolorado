@@ -17,12 +17,12 @@ import SmallImage from "./smallImage"
 const NavbarCircles = () => (
   
     <ul className="circle-links">
-      <li>
-        <NavLink href="/meditation">
-          <h5>Meditation</h5>
+    <li>
+        <NavLink href="/schedule">
+        <h5>Class Schedule</h5>
         </NavLink>
-        <NavLink href="/meditation">
-          <RoundImage filename="lightning.png" />
+        <NavLink href="/schedule">
+          <RoundImage filename="vitvan-portrait.png" />
         </NavLink>
       </li>
       <li>
@@ -54,13 +54,14 @@ const NavbarCircles = () => (
         </NavLink>
       </li>
       <li>
-        <NavLink href="/schedule">
-        <h5>Class Schedule</h5>
+        <NavLink href="/meditation">
+          <h5>Meditation</h5>
         </NavLink>
-        <NavLink href="/schedule">
-          <RoundImage filename="vitvan-portrait.png" />
+        <NavLink href="/meditation">
+          <RoundImage filename="lightning.png" />
         </NavLink>
       </li>
+      
     </ul>
   
 )

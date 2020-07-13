@@ -48,13 +48,13 @@ const Header = ({ siteTitle }) => {
               <NavLink href="/about">About</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/meditation">Meditation</NavLink>
+              <NavLink href="/schedule">Class Schedule</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="/contact">Contact</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/schedule">Class Schedule</NavLink>
+              <NavLink href="/meditation">Meditation</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
