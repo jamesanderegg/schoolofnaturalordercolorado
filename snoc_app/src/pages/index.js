@@ -26,9 +26,9 @@ const IndexPage = props => {
             
             
 
-            <div className="arrow-down-right"></div>
+            <div className="scroll-text">Scroll Down</div>
             <div className="arrow-down"></div>
-            <div className="arrow-down-left"></div>
+            
           </div>
           
           
@@ -47,7 +47,7 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query {
-    indexImage: file(relativePath: { eq: "longs-peak.png" }) {
+    indexImage: file(relativePath: { eq: "longs-peak1.png" }) {
       childImageSharp {
         fluid(maxWidth: 1800) {
           ...GatsbyImageSharpFluid
