@@ -6,7 +6,7 @@ import { faFacebookF, faInstagram, faTwitter, faLinkedin, faYoutube } from "@for
 
 const Footer = () => (
   <div className="site-footer">
-    <h4 className="text-center">The School of The Natural Order</h4>
+    <h4 className="text-center">The School of The Natural Order of Colorado</h4>
     <p className="text-center"> Follow us on Social Media</p>
     <div className="footer-social-links">
       <ul className="social-links-list">

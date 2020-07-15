@@ -30,8 +30,7 @@ const RoundImage = props => (
       }
 
       const imageFluid = image.node.childImageSharp.fixed
-      console.log(props)
-      return <Img alt={props.alt} fixed={imageFluid} className="rounded-circle"/>
+      return <Img alt={props.alt} fixed={imageFluid} className="rounded-circle lg-circle"/>
     }}
   />
 )

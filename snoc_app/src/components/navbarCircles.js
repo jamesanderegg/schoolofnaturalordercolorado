@@ -1,25 +1,24 @@
-import React from "react"
+import React, { useState } from "react"
 
-import {
-  Row,
-  Col,
-  Nav,
-  NavItem,
-  NavLink,
-  Navbar,
-  NavbarBrand,
-} from "reactstrap"
+import { NavLink } from "reactstrap"
 import RoundImage from "../components/roundImage"
+import SmallRoundImage from "../components/smallRoundImage"
 
 import "../styles/navbarCircles.scss"
 import SmallImage from "./smallImage"
 
-const NavbarCircles = () => (
-  
+const NavbarCircles = () => {
+  const [mediaOpen, setMediaOpen] = useState(false)
+
+  const toggleMedia = () => {
+    setMediaOpen(isOpen => !isOpen)
+    
+  }
+  return (
     <ul className="circle-links">
-    <li>
+      <li>
         <NavLink href="/schedule">
-        <h5>Class Schedule</h5>
+          <h5>Class Schedule</h5>
         </NavLink>
         <NavLink href="/schedule">
           <RoundImage filename="vitvan-portrait.png" />
@@ -44,14 +43,36 @@ const NavbarCircles = () => (
       </li>
 
       <li>
-        <NavLink href="https://www.sno.org/books-and-mp3s">
-          <h5>SNO Media</h5>
-        </NavLink>
-        <NavLink
-          href="https://www.sno.org/books-and-mp3s"
-        >
-          <RoundImage filename="rainbow.png" />
-        </NavLink>
+        
+        {!mediaOpen ? <div className="dd-wrapper">
+          <NavLink href="#" onClick={toggleMedia}>
+            <h5>SNO Media</h5>
+          </NavLink>
+          <NavLink href="#" onClick={toggleMedia}>
+            <RoundImage filename="rainbow.png" />
+          </NavLink>
+        </div> : (<div className="dd-list">
+          <ul>
+          <NavLink href="#" onClick={toggleMedia}><h5>Media</h5></NavLink>
+            <li>
+              <NavLink href="/media">
+                <h5>Colorado</h5>
+              </NavLink>
+              <NavLink href="/media">
+              <SmallRoundImage filename="colorado.png" />
+              </NavLink>
+            </li>
+            <li>
+              <NavLink href="https://www.sno.org/books-and-mp3s">
+                <h5>Nevada</h5>
+              </NavLink>
+              <NavLink href="https://www.sno.org/books-and-mp3s">
+              <SmallRoundImage filename="rainbow.png" />
+              </NavLink>
+            </li>
+          </ul>
+        </div>)}
+        
       </li>
       <li>
         <NavLink href="/meditation">
@@ -61,10 +82,9 @@ const NavbarCircles = () => (
           <RoundImage filename="lightning.png" />
         </NavLink>
       </li>
-      
     </ul>
-  
-)
+  )
+}
 export default NavbarCircles
 
 {
