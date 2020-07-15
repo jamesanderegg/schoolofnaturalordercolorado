@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[11],{JLbc:function(e,a,t){"use strict";t.r(a);var n=t("q1tI"),l=t.n(n),r=t("Bl7J"),c=t("vrFN"),o=t("ok1R");a.default=function(){return l.a.createElement(r.a,null,l.a.createElement(c.a,{title:"Colorado Media"}),l.a.createElement("h1",{style:{marginTop:"190px"}},"Media Page"),l.a.createElement("br",null),l.a.createElement(o.a,{style:{margin:"0 100px"}}))}}}]);
+//# sourceMappingURL=component---src-pages-media-js-c90da7b5b852e52ae853.js.map
