@@ -8,14 +8,14 @@ import LargeImage from "../components/largeImage"
 import ChartImage from "../components/chartImage"
 import Video from "../components/video"
 
-import '../styles/page_content.scss'
+import "../styles/page_content.scss"
 import { Container, Col, Row } from "reactstrap"
 
 const MeditationPage = () => {
   return (
     <Layout>
       <SEO title="Meditation" />
-      <Container style={{marginBottom: "100px"}}>
+      <Container style={{ marginBottom: "100px" }}>
         <h1 className="title">
           Meditation as taught in The School of The Natural Order
         </h1>
@@ -35,9 +35,14 @@ const MeditationPage = () => {
           experience, and know, so it is on succeedingly higher levels. It
           requires energy to function, to be conscious.
         </p>
-        <Row>
-          <Col>
-            <p>
+        <Row
+          style={{
+            margin: "20px 0px",
+            textAlign: "center",
+          }}
+        >
+          <Col style={{margin:"auto"}}>
+            <p >
               When we work our understanding into the so-called higher levels,
               we find that energy has a wide range of gradations in fineness. As
               one develops functional ability on the inner or higher levels the
@@ -50,12 +55,9 @@ const MeditationPage = () => {
               functioning upon any level.
             </p>
           </Col>
-          <Col md={6} style={{
-            padding: "40px 0px",
-              textAlign: "center",
-              justifyContent: "center",
-              alignSelf: "center",
-            }}><LargeImage filename="vitvan-at-table-2.png" /></Col>
+          <Col md={6}>
+            <LargeImage filename="vitvan-at-table-2.png" />
+          </Col>
         </Row>
         <p>
           The next step after that thought is established is breath. One must
@@ -74,30 +76,37 @@ const MeditationPage = () => {
           have your lungs full of air, breathe in some more. Quite a little
           practice is required to learn how to take a full breath.
         </p>
-        <p>
-          Now we have two factors: the thought that we’re dealing with energy
-          and the practice of taking a full breath. This is only preliminary.
-          We’re getting ready to meditate. Then, turn the thought upon the four
-          somatic divisions of yourself, of ‘man’. The lowest of the four is
-          symbolized by earth; the next by water; the next by air; and the
-          highest, in the head centers, symbolized by fire. These are a part of
-          zodiacal symbolism, which is only a language that describes the
-          functions. It does not mean that when Venus is in Libra that anything
-          is going to happen to you. It simply means that when you have the
-          force in the heart center the experience that you will have is
-          describable as Venus in Libra. And when your forces are down in the
-          solar center and Mars is in Scorpio, it means that you are wont to
-          quarrel and fight, even when everything is harmonious and peaceful.
-          You’ll stir up something so you can have a good quarrel.
-        </p>
+
         <Row>
-        <Col md={6} style={{
-          padding: "40px 0px",
+          <Col
+            md={6}
+            style={{
+              padding: "40px 0px",
               textAlign: "center",
               justifyContent: "center",
               alignSelf: "center",
-            }}><ChartImage filename="chart.png" /></Col>
+            }}
+          >
+            <ChartImage filename="chart.png" />
+          </Col>
           <Col>
+            <p>
+              Now we have two factors: the thought that we’re dealing with
+              energy and the practice of taking a full breath. This is only
+              preliminary. We’re getting ready to meditate. Then, turn the
+              thought upon the four somatic divisions of yourself, of ‘man’. The
+              lowest of the four is symbolized by earth; the next by water; the
+              next by air; and the highest, in the head centers, symbolized by
+              fire. These are a part of zodiacal symbolism, which is only a
+              language that describes the functions. It does not mean that when
+              Venus is in Libra that anything is going to happen to you. It
+              simply means that when you have the force in the heart center the
+              experience that you will have is describable as Venus in Libra.
+              And when your forces are down in the solar center and Mars is in
+              Scorpio, it means that you are wont to quarrel and fight, even
+              when everything is harmonious and peaceful. You’ll stir up
+              something so you can have a good quarrel.
+            </p>
             <p>
               Those are two of the symbols that characterize the functions of a
               given ‘man’. One breaks through from objective self-consciousness
@@ -224,32 +233,156 @@ const MeditationPage = () => {
           maladjustments result from not being mated with one who knows how to
           function on that level, responsively, one with another.
         </p>
-        <Row>
-        <Col md={6} style={{
-          padding: "40px 0px",
-              textAlign: "center",
-              justifyContent: "center",
-              alignSelf: "center",
-            }}><Video
+        <Row
+          style={{
+            margin: "0px 0px",
+            textAlign: "center",
+          }}
+        >
+          <Col md={6} style={{ margin: "auto" }}>
+            <Video
               videoSrcURL="https://www.youtube.com/embed/ZYWkoBNsKqk"
               videoTitle="Getting Functional with Vitvan - A Meditation Practice"
-            /></Col>
+            />
+          </Col>
           <Col>
             <p>
-            The force does not remain on that level. It rises. Notice the three lines running up through the circles on the chart. The outside two lines, like the negative and positive lines of force, spiral upward. One turns one way end one the other. That is the ancient symbol of the caduceus, Hermes’ staff. Our modern medical association has adopted that ancient symbol. I wonder if they understand it. One cannot function on a relatively higher level without the energy with which to function. So little by little those currents are directed upward, until “where three ways meet, go into Jerusalem” (go into the kingdom), “and in an upper room” (notice the symbolism) “prepare the last supper” (the death of the personality, the resurrection of consciousness in the Light.) Read that Good Book. It’s all there.
+              The force does not remain on that level. It rises. Notice the
+              three lines running up through the circles on the chart. The
+              outside two lines, like the negative and positive lines of force,
+              spiral upward. One turns one way end one the other. That is the
+              ancient symbol of the caduceus, Hermes’ staff. Our modern medical
+              association has adopted that ancient symbol. I wonder if they
+              understand it. One cannot function on a relatively higher level
+              without the energy with which to function. So little by little
+              those currents are directed upward, until “where three ways meet,
+              go into Jerusalem” (go into the kingdom), “and in an upper room”
+              (notice the symbolism) “prepare the last supper” (the death of the
+              personality, the resurrection of consciousness in the Light.) Read
+              that Good Book. It’s all there.
             </p>
           </Col>
         </Row>
-        <p>The ida-pingala currents go ahead. Another allegory is John the Baptist, who “goeth ahead and prepareth the way, but there is One coming after me who is greater than I,” etc. Those currents have to go ahead and prepare the way for the awakening of a greater power, the speirema, the kundalini, the fire, because it would be absolutely disastrous for that greater power to awaken if the psychic self was not purified. That going ahead and preparing the way, we call, in our work, the purificatory period on the path. That’s our label for it, because as the force rises it throws out on the periphery of the psyche everything that cannot be utilized in the new vesture, the fire body. Everything must go out, and it is cast out on the periphery before it is cast out entirely.</p>
-        <p>To accomplish this, or to co-operate with it, constitutes the object of meditation. Sitting still and trying to hold your thoughts still and getting still and mumbling something, like, “My own shall come to me,” is the most dangerous thing that one can do, because he is opening himself to any influence that might be around in the psychic atmosphere. The most dangerous thing to do is to sit negative, supine, waiting for something to happen, the Lord to speak to you, or what have you. Meditation is the most positive attitude that one can assume.</p>
-        <p>Let me backtrack now and pick up the factors and put them together. Here is the way we meditate, the way we practice co-operation with the Natural Order Process. We sit relaxed, hands resting on our thighs, palms up; the spine is held straight to allow the forces to flow freely. We focus attention upon one or the other of the psychic centers, wherever we happen to be in our ongoing. Some even haven’t awakened the power in the level of generation. Some have. Some are in the solar center, some in the heart center, some in the throat center, and some in the pituitary. It doesn’t make any difference which center, there’s no ‘high’ or flow’, ‘good’ or ‘bad’: we’re dealing with energy, just like electricity. There’s no ‘good’ or ‘bad’ about electricity. You function with this energy on the level upon which you want to function.</p>
-        <p>With attention focused upon the psychic centers, begin to breathe deeply. Gradually breathe air into your lungs until they are full—a full breath. Keeping your focus on one center, breathe air into your lungs while you visualize, imagine, realize you are charging the battery, you’re taking in energy. Oxygen is another label for fire, energy. Just as we convert the food that we ingest into energy before it is available to the cellular structure, so we convert the oxygen into fire by the breathing process. You are understandingly co-operating with the process now. “With all of thy getting, get understanding.” Don’t go mooning around; work in the clear light of understanding at all times.</p>
-        <p>Focus now, we’ll say, on the heart center, and fill your lungs full of air, taking a full breath, and as you do this realize, actually experience in feeling, that you are converting oxygen into fire, into energy. Hold the focus and exhale slowly and gradually, and as you exhale feel that this heart center, for instance, is like a powerful searchlight that is shining in all directions, and that shining is breathing out love to all creation. Breathe it out to everything—the grass, the flowers, the earth and the trees, the dogs and the cats— not just to some one. The world needs this power to dispel the ugly destructive forces that are being released elsewhere. Breathe this power out, breathing out love, to everything. Hold your focus as you do this. Practice that five minutes to start with. After you do it five minutes four or five weeks or so, increase the time until you can do it for fifteen, twenty, thirty minutes. You can’t do that at first; but you can build yourself up to where you can do it.</p>
-        <p>The focus of attention is very important on the grounds that the psychic nature operates under the power of suggestion. It doesn’t operate any other way until it is free, liberated, independent and well developed. After a few months of holding the focus, your psyche finds out what you are trying to do and will do it whether you think of it or not. We condition the psyche over the years until it operates under the suggestion whether we think of it or not. That is the point.</p>
-        <p>Gradually we bring the force up until we focus at the crown. The focusing at the crown awakens the power in the sacral center and the greater One awakens and comes in and turns you over into the Mind Level, into the Supernal Light.</p>
-        <p>So much for meditation. Now I’m going to make a few comments about it. Those of us who have been practicing this form of meditation for a number of years find this: we’re busy with the housework or the job or whatever we are doing, and we are so busy we don’t think there is any need to make preparation for something that is destructive. Suddenly, right in the midst of being objectively busy, we’ll feel the forces beginning to rise and intensify. We have learned through the years that the psyche knows something is impending that the brain, the objective person, doesn’t know; and so the psyche is getting ready to meet it or is lifting the forces above the level that it is on. If one can get his forces above the level that the impending menace is on he is immune to it. It cannot touch him because it can’t get off its level and he’s already on a higher level.</p>
-        <p>Train and discipline your psyche until your psyche begins to do this automatically. No, it’s not actually automatic; there’s wisdom, knowledge and consciousness involved. The psyche knows much more than the brain knows about anything and everything. When the psyche knows something is going to happen that is destructive or disagreeable or that we should be protected from, it goes to work and raises the force, and the raising of those forces attracts our attention. So we co-operate with it. Very often that happens almost daily. Many other things like that eventuate as a result of this form of meditation. It opens up whole new worlds teeming with life, teeming with people, teeming with activity, and full of the most fascinating discoveries while we take the journey to the promised land.</p>
-        <p>Meditation is the key to the whole thing, and if you get hold of that key you will have something extremely valuable. If you don’t want it, leave it alone, stay out of it. The time will come when you will want this more than you want anything else.</p>
+        <p>
+          The ida-pingala currents go ahead. Another allegory is John the
+          Baptist, who “goeth ahead and prepareth the way, but there is One
+          coming after me who is greater than I,” etc. Those currents have to go
+          ahead and prepare the way for the awakening of a greater power, the
+          speirema, the kundalini, the fire, because it would be absolutely
+          disastrous for that greater power to awaken if the psychic self was
+          not purified. That going ahead and preparing the way, we call, in our
+          work, the purificatory period on the path. That’s our label for it,
+          because as the force rises it throws out on the periphery of the
+          psyche everything that cannot be utilized in the new vesture, the fire
+          body. Everything must go out, and it is cast out on the periphery
+          before it is cast out entirely.
+        </p>
+        <p>
+          To accomplish this, or to co-operate with it, constitutes the object
+          of meditation. Sitting still and trying to hold your thoughts still
+          and getting still and mumbling something, like, “My own shall come to
+          me,” is the most dangerous thing that one can do, because he is
+          opening himself to any influence that might be around in the psychic
+          atmosphere. The most dangerous thing to do is to sit negative, supine,
+          waiting for something to happen, the Lord to speak to you, or what
+          have you. Meditation is the most positive attitude that one can
+          assume.
+        </p>
+        <p>
+          Let me backtrack now and pick up the factors and put them together.
+          Here is the way we meditate, the way we practice co-operation with the
+          Natural Order Process. We sit relaxed, hands resting on our thighs,
+          palms up; the spine is held straight to allow the forces to flow
+          freely. We focus attention upon one or the other of the psychic
+          centers, wherever we happen to be in our ongoing. Some even haven’t
+          awakened the power in the level of generation. Some have. Some are in
+          the solar center, some in the heart center, some in the throat center,
+          and some in the pituitary. It doesn’t make any difference which
+          center, there’s no ‘high’ or flow’, ‘good’ or ‘bad’: we’re dealing
+          with energy, just like electricity. There’s no ‘good’ or ‘bad’ about
+          electricity. You function with this energy on the level upon which you
+          want to function.
+        </p>
+        <p>
+          With attention focused upon the psychic centers, begin to breathe
+          deeply. Gradually breathe air into your lungs until they are full—a
+          full breath. Keeping your focus on one center, breathe air into your
+          lungs while you visualize, imagine, realize you are charging the
+          battery, you’re taking in energy. Oxygen is another label for fire,
+          energy. Just as we convert the food that we ingest into energy before
+          it is available to the cellular structure, so we convert the oxygen
+          into fire by the breathing process. You are understandingly
+          co-operating with the process now. “With all of thy getting, get
+          understanding.” Don’t go mooning around; work in the clear light of
+          understanding at all times.
+        </p>
+        <p>
+          Focus now, we’ll say, on the heart center, and fill your lungs full of
+          air, taking a full breath, and as you do this realize, actually
+          experience in feeling, that you are converting oxygen into fire, into
+          energy. Hold the focus and exhale slowly and gradually, and as you
+          exhale feel that this heart center, for instance, is like a powerful
+          searchlight that is shining in all directions, and that shining is
+          breathing out love to all creation. Breathe it out to everything—the
+          grass, the flowers, the earth and the trees, the dogs and the cats—
+          not just to some one. The world needs this power to dispel the ugly
+          destructive forces that are being released elsewhere. Breathe this
+          power out, breathing out love, to everything. Hold your focus as you
+          do this. Practice that five minutes to start with. After you do it
+          five minutes four or five weeks or so, increase the time until you can
+          do it for fifteen, twenty, thirty minutes. You can’t do that at first;
+          but you can build yourself up to where you can do it.
+        </p>
+        <p>
+          The focus of attention is very important on the grounds that the
+          psychic nature operates under the power of suggestion. It doesn’t
+          operate any other way until it is free, liberated, independent and
+          well developed. After a few months of holding the focus, your psyche
+          finds out what you are trying to do and will do it whether you think
+          of it or not. We condition the psyche over the years until it operates
+          under the suggestion whether we think of it or not. That is the point.
+        </p>
+        <p>
+          Gradually we bring the force up until we focus at the crown. The
+          focusing at the crown awakens the power in the sacral center and the
+          greater One awakens and comes in and turns you over into the Mind
+          Level, into the Supernal Light.
+        </p>
+        <p>
+          So much for meditation. Now I’m going to make a few comments about it.
+          Those of us who have been practicing this form of meditation for a
+          number of years find this: we’re busy with the housework or the job or
+          whatever we are doing, and we are so busy we don’t think there is any
+          need to make preparation for something that is destructive. Suddenly,
+          right in the midst of being objectively busy, we’ll feel the forces
+          beginning to rise and intensify. We have learned through the years
+          that the psyche knows something is impending that the brain, the
+          objective person, doesn’t know; and so the psyche is getting ready to
+          meet it or is lifting the forces above the level that it is on. If one
+          can get his forces above the level that the impending menace is on he
+          is immune to it. It cannot touch him because it can’t get off its
+          level and he’s already on a higher level.
+        </p>
+        <p>
+          Train and discipline your psyche until your psyche begins to do this
+          automatically. No, it’s not actually automatic; there’s wisdom,
+          knowledge and consciousness involved. The psyche knows much more than
+          the brain knows about anything and everything. When the psyche knows
+          something is going to happen that is destructive or disagreeable or
+          that we should be protected from, it goes to work and raises the
+          force, and the raising of those forces attracts our attention. So we
+          co-operate with it. Very often that happens almost daily. Many other
+          things like that eventuate as a result of this form of meditation. It
+          opens up whole new worlds teeming with life, teeming with people,
+          teeming with activity, and full of the most fascinating discoveries
+          while we take the journey to the promised land.
+        </p>
+        <p>
+          Meditation is the key to the whole thing, and if you get hold of that
+          key you will have something extremely valuable. If you don’t want it,
+          leave it alone, stay out of it. The time will come when you will want
+          this more than you want anything else.
+        </p>
       </Container>
     </Layout>
   )
