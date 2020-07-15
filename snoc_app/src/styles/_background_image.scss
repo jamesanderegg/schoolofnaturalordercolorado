@@ -1,63 +1,49 @@
 .masthead {
-    width: 100%;
+    width: 90%;
     height: fit-content;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    // padding: 6%;
+    margin: auto;
     // margin: 50px 50px 0px 100px;
     // position: relative; 
     height: 100vh;
 }
 
-.black-overlay {
+// .black-overlay {
+//     display: -webkit-flex;
+//     display: flex;
+//     background-color: rgba(0,0,0,.4);
+//     height: 100%;
+//     align-items: center;
+//     text-align: center;
+//     color: white;
+// }
+.coverOverlay-div {
     display: -webkit-flex;
     display: flex;
-    background-color: rgba(0,0,0,.4);
-    height: 100%;
-    align-items: center;
-    text-align: center;
+    height: 100%;   
     color: white;
+    margin: 5%;
 }
 
 .content-box {
-    max-width: 700px;
-    margin: 20% auto;
-    
-
+    max-width: 1000px;
+    margin: 25% auto;
 }
-.arrow-down {
-    height: 0; 
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 20px solid rgb(255, 255, 255);
-    margin: auto;
-    position:absolute;
-    left: 48%;
--webkit-transform: translateX(-48%);
-transform: translateX(-48%);
-    bottom: 7px;
-  }
-  .scroll-text {
-    
-    position:absolute;
-    left: 50%;
--webkit-transform: translateX(-50%);
-transform: translateX(-50%);
-    bottom: 25px;
-  }
+// .arrow-down {
+//     height: 0; 
+//     border-left: 20px solid transparent;
+//     border-right: 20px solid transparent;
+//     border-top: 20px solid rgb(255, 255, 255);
+//     margin: auto;
+//     position:absolute;
+//     left: 48%;
+// -webkit-transform: translateX(-48%);
+// transform: translateX(-48%);
+//     bottom: 7px;
+//   }
 
-  .arrow-down-right {
-    height: 0; 
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 20px solid rgb(255, 255, 255);
-    margin: auto;
-    position:absolute;
-    left: 52%;
--webkit-transform: translateX(-52%);
-transform: translateX(-52%);
-    bottom: 7px;
-  }
+
  

@@ -34,7 +34,7 @@ const Footer = () => (
         
       </ul>
     </div>
-    <p className="text-center"> &#x00A9; 2020 The School of Natural Order</p>
+    <p className="text-center"> &#x00A9; 2020 The School of Natural Order of Colorado</p>
   </div>
 )
 export default Footer

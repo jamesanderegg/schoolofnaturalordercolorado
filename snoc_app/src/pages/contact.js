@@ -18,7 +18,7 @@ const ContactPage = () => {
         <br />
         <Row style={{margin: "0 100px"}}>
         <Col
-            md={7}
+            md={6}
             
           >
         <form
@@ -33,7 +33,7 @@ const ContactPage = () => {
             name="name"
             id="name"
             placeholder="Enter your name"
-            size="50"
+            style={{width:"100%"}}
           />
           <br />
           <br />
@@ -42,7 +42,7 @@ const ContactPage = () => {
             name="email"
             id="email"
             placeholder="Enter your email"
-            size="50"
+            style={{width:"100%"}}
           />
           <br />
           <br />
@@ -51,8 +51,7 @@ const ContactPage = () => {
             name="subject"
             id="subject"
             placeholder="Enter the subject"
-            size="50"
-          />
+            style={{width:"100%"}}          />
           <br />
           <br />
           <textarea
@@ -60,8 +59,9 @@ const ContactPage = () => {
             id="message"
             rows="5"
             placeholder="Type your Message here. If inquiring about a class, please include the title of the class in your message. "
-            cols="50"
+            
             rows="10"
+            style={{width:"100%"}}
           />
           <br />
           <button type="submit">Send</button>
@@ -70,7 +70,7 @@ const ContactPage = () => {
         <br />
         </Col>
         <Col
-            md={5}
+            md={6}
             
           >
         

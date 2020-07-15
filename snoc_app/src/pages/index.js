@@ -18,16 +18,15 @@ const IndexPage = props => {
         className="masthead"
         fluid={props.data.indexImage.childImageSharp.fluid}
       >
-        <div className="black-overlay">
+        <div className="coverOverlay-div">
           <div className="content-box">
-            <h1>The School of The Natural Order</h1>
-            <h2>of Colorado</h2>
+            <h1>The School of The Natural Order of Colorado</h1>
+            
             <h3 style={{ marginTop: "60px" }}>The Teachings of Vitvan</h3>
             
             
 
-            <div className="scroll-text">Scroll Down</div>
-            <div className="arrow-down"></div>
+            
             
           </div>
           
