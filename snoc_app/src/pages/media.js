@@ -11,6 +11,7 @@ const Media = () => {
       
         <h1 style={{ marginTop: "190px" }}>Media Page</h1>
         <br />
+        <h1 style={{ marginTop: "190px" }}>Under Construction</h1>
         <Row style={{margin: "0 100px"}}>
  </Row>
     </Layout>
