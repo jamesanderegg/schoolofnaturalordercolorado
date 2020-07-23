@@ -62,32 +62,25 @@ const AboutPage = () => {
         </Row>
         <br />
         <h3 style={{ fontWeight: 'bold'}}>The Schools Beginning</h3>
-        <Row>
-          <Col md={6}><p>
-          The School began in Los Angeles in 1922 and at that time was called
+        <div className="wrapper-right">
+            <LargeImage filename="vitvan-at-table.png" />
+          </div>
+        <p style={{
+              margin: "30px 0",
+              textAlign: "center",
+              justifyContent: "center",
+              alignSelf: "center"}}>The School began in Los Angeles in 1922 and at that time was called
           the School of the Sacred Science... It was founded by Ralph M. deBit
           who was born in Kansas in 1883. He was raised in a Methodist family
           with the Christian bible as his early religious training, and later as
           a young man, he studied Christian Science and various metaphysical
-          teachings. He became a forest ranger in Idaho and said that it was
+          teachings.  He became a forest ranger in Idaho and said that it was
           there, in 1907, that he began to seriously undertake his self
-          development with the study and practice of Eastern philosophy. It was
+          development with the study and practice of Eastern philosophy.  It was
           not long afterwards, in Seattle, that deBit met a man named A.K.
           Mozumdar who became his teacher. He spent seven years of work and
-          study with him.
-        </p>
-        </Col>
-        <Col md={6} style={{
-          padding: "40px 0px",
-              textAlign: "center",
-              justifyContent: "center",
-              alignSelf: "center",
-            }}>
-        <LargeImage filename="vitvan-at-table.png" />
-        <h6 style={{fontStyle: 'italic', textAlign: 'center', fontWeight: 'bold'}}>Vitvan</h6>
-        </Col>
-        </Row>
-        <p>
+          study with him.</p>
+          <p>
           Toward the last half of the 19th century, there was a reappearance of
           the pre-Christian gnosis and the Wisdom Teaching as it had been
           presented in the Occident. It was upon this tradition that the School
@@ -103,24 +96,10 @@ const AboutPage = () => {
           during the winter to travel and lecture, and return to in the summer
           to teach seminars and classes.
         </p>
-        <Row>
-          <Col md={6} style={{
-            padding: "40px 0px",
-              textAlign: "center",
-              justifyContent: "center",
-              alignSelf: "center",
-            }} >
-          <LargeImage filename="dr-john.png" />
-          <h6 style={{fontStyle: 'italic', textAlign: 'center', fontWeight: 'bold'}}>Dr. John Gozzi </h6>
-          <p style={{fontStyle: 'italic', textAlign: 'center', fontWeight: 'bold'}}>The Colorado Chapter of the School of the Natural Order was founded by Dr. John Gozzi in 1978, one of Vitvan's longtime and closest students.</p>
-
-          </Col>
-          <Col md={6} style={{
-            padding: "40px 0px",
-              textAlign: "center",
-              justifyContent: "center",
-              alignSelf: "center",
-            }}><p>
+          <div className="wrapper-left">
+        <LargeImage filename="dr-john.png" />
+        </div>
+        <p>
           During this period of his life, Vitvan was growing increasingly
           dissatisfied with the presentation of the Wisdom Teachings in the
           older metaphysical, occult and mystical framework that he felt did not
@@ -139,9 +118,7 @@ const AboutPage = () => {
           to completely rewrite everything he had previously written to conform
           with the new structure he perceived.
         </p>
-        </Col>
         
-        </Row>
         
         <p>
           The current literature of the School of the Natural Order was either
@@ -156,8 +133,10 @@ const AboutPage = () => {
         <p>
           The School of the Natural Order presently has two established
           locations: one in Baker, Nevada, and one in Denver, Colorado. There
-          are also study groups in California and around the country
+          are also study groups in California and around the country.
         </p>
+        
+      
       </Container>
     </Layout>
   )

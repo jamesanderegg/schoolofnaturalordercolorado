@@ -3,6 +3,7 @@ p{
     text-align: center;
 }
 .container{
+    display: block;
     margin-bottom: 100px;
 }
 .title{
@@ -31,3 +32,20 @@ p{
     justify-content: center;              
 }
 
+.wrapper-left{
+    float: left;
+    margin: 0 40px;
+}
+.wrapper-right{
+    float:right;
+    margin: 0 40px;
+    
+}
+ul{
+    
+    max-height: 400px;
+}
+li{
+    display: inline-block;
+    margin: 20px;
+}

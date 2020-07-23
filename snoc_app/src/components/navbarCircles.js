@@ -23,6 +23,7 @@ const NavbarCircles = () => {
         <NavLink href="/schedule">
           <RoundImage filename="vitvan-portrait.png" />
         </NavLink>
+        
       </li>
       <li>
         <NavLink href="/contact">
@@ -61,6 +62,7 @@ const NavbarCircles = () => {
               <NavLink href="/media">
               <SmallRoundImage filename="colorado.png" />
               </NavLink>
+              <h6>snoc.org</h6>
             </li>
             <li>
               <NavLink href="https://www.sno.org/books-and-mp3s">
@@ -69,6 +71,7 @@ const NavbarCircles = () => {
               <NavLink href="https://www.sno.org/books-and-mp3s">
               <SmallRoundImage filename="rainbow.png" />
               </NavLink>
+              <h6>sno.org</h6>
             </li>
           </ul>
         </div>)}

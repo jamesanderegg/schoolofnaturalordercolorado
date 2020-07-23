@@ -19,6 +19,9 @@ const MeditationPage = () => {
         <h1 className="title">
           Meditation as taught in The School of The Natural Order
         </h1>
+        <div className="wrapper-right">
+          <LargeImage filename="vitvan-at-table-2.png" />
+        </div>
         <p style={{ textAlign: "center" }}>
           In describing the method of meditation as practiced in the School of
           the Natural Order, I direct your attention to energy, vital force,
@@ -35,30 +38,19 @@ const MeditationPage = () => {
           experience, and know, so it is on succeedingly higher levels. It
           requires energy to function, to be conscious.
         </p>
-        <Row
-          style={{
-            margin: "20px 0px",
-            textAlign: "center",
-          }}
-        >
-          <Col style={{margin:"auto"}}>
-            <p >
-              When we work our understanding into the so-called higher levels,
-              we find that energy has a wide range of gradations in fineness. As
-              one develops functional ability on the inner or higher levels the
-              wave lengths become so short and the frequencies so high that
-              there is almost no way to differentiate between frequencies. So
-              energy is not the same on every level. You must allow for degrees
-              of fineness. If we were all electronic engineers, we would
-              probably have mathematical formulas to describe this; but you get
-              the idea. Focus the thought upon energy. It is prerequisite to
-              functioning upon any level.
-            </p>
-          </Col>
-          <Col md={6}>
-            <LargeImage filename="vitvan-at-table-2.png" />
-          </Col>
-        </Row>
+
+        <p>
+          When we work our understanding into the so-called higher levels, we
+          find that energy has a wide range of gradations in fineness. As one
+          develops functional ability on the inner or higher levels the wave
+          lengths become so short and the frequencies so high that there is
+          almost no way to differentiate between frequencies. So energy is not
+          the same on every level. You must allow for degrees of fineness. If we
+          were all electronic engineers, we would probably have mathematical
+          formulas to describe this; but you get the idea. Focus the thought
+          upon energy. It is prerequisite to functioning upon any level.
+        </p>
+
         <p>
           The next step after that thought is established is breath. One must
           learn breath work before he attempts meditation. We use what we call
@@ -77,19 +69,10 @@ const MeditationPage = () => {
           practice is required to learn how to take a full breath.
         </p>
 
-        <Row>
-          <Col
-            md={6}
-            style={{
-              padding: "40px 0px",
-              textAlign: "center",
-              justifyContent: "center",
-              alignSelf: "center",
-            }}
-          >
+       <div className="wrapper-left">
             <ChartImage filename="chart.png" />
-          </Col>
-          <Col>
+            </div>
+          
             <p>
               Now we have two factors: the thought that we’re dealing with
               energy and the practice of taking a full breath. This is only
@@ -125,8 +108,7 @@ const MeditationPage = () => {
               upon which is the most positive and which is the negative. The
               negative one will take on more, the positive one less.
             </p>
-          </Col>
-        </Row>
+   
         <p>
           When one breaks through objective identification, limited to the
           neural sense functioning, he begins to be conscious of the wave
