@@ -6,7 +6,6 @@ import SEO from "../components/seo"
 
 import {
   Container,
-  
   Col,
   Row,
   Card,
@@ -26,25 +25,27 @@ const ClassSchedule = () => {
       <SEO title="About" />
       <h1 className="title">Class Schedule</h1>
       <p style={{ textAlign: "center" }}>
-        The School of the Natural Order offers three classes online. The
-        classes are taught by students for students. If you are interested in
-        joining a class, please fill out the{" "}
+        The School of the Natural Order offers three classes online. The classes
+        are taught by students for students. If you are interested in joining a
+        class, please fill out the{" "}
         <Link to="/contact" className="link">
           contact
         </Link>{" "}
         form and indicate which class you are interested in.
       </p>
       <CardDeck style={{ padding: "30px" }}>
-        <Card >
+        <Card>
           <CardBody>
-            <CardTitle className="cardtitle">Nine Steps on the Ladder of Development</CardTitle>
+            <CardTitle className="cardtitle">
+              Nine Steps on the Ladder of Development
+            </CardTitle>
             <CardSubtitle className="mb-2 text-muted">by Vitvan</CardSubtitle>
             <CardText>
               Every second and fourth Monday of the month 6:00 pm (MST)
             </CardText>
           </CardBody>
         </Card>
-        <Card >
+        <Card>
           <CardBody>
             <CardTitle>Gnostic Foundations of the US Government</CardTitle>
             <CardSubtitle className="mb-2 text-muted">by Vitvan</CardSubtitle>
@@ -54,7 +55,7 @@ const ClassSchedule = () => {
             </CardText>
           </CardBody>
         </Card>
-        <Card >
+        <Card>
           <CardBody>
             <CardTitle>Practicing "The Work"</CardTitle>
             <CardSubtitle className="mb-2 text-muted">
@@ -66,7 +67,7 @@ const ClassSchedule = () => {
             </CardText>
           </CardBody>
         </Card>
-        <Card >
+        <Card>
           <CardBody>
             <CardTitle>A Treatise on Faith</CardTitle>
             <CardSubtitle className="mb-2 text-muted">by Vitvan</CardSubtitle>
@@ -76,20 +77,20 @@ const ClassSchedule = () => {
             </CardText>
           </CardBody>
         </Card>
-        <Card >
+        <Card>
           <CardBody>
             <CardTitle> Expanding States of Self Awareness</CardTitle>
             <CardSubtitle className="mb-2 text-muted">by Vitvan</CardSubtitle>
-            <CardText>
-            Every Sunday at 12:00 pm (MST)
-            </CardText>
+            <CardText>Every Sunday at 12:00 pm (MST)</CardText>
           </CardBody>
         </Card>
       </CardDeck>
       <p>Please visit the contact page to sign up for classes </p>
-      <h3><Link to="/contact" className="link">
+      <h3>
+        <Link to="/contact" className="link">
           Contact Us!
-        </Link></h3>
+        </Link>
+      </h3>
       <Container style={{ marginTop: "180px" }}></Container>
     </Layout>
   )
