@@ -21,8 +21,8 @@ const Header = ({ siteTitle }) => {
 
   return (
     <div>
-      <Navbar fixed="top" light expand="sm">
-        <Row>
+      <Navbar fixed="top" light expand="lg">
+        <Row style={{width: "100%"}}>
         <Col
             xs={9}
             style={{

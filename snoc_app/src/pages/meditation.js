@@ -21,6 +21,7 @@ const MeditationPage = () => {
         </h1>
         <div className="wrapper-right">
           <LargeImage filename="vitvan-at-table-2.png" />
+          <h4>Vitvan</h4>
         </div>
         <p style={{ textAlign: "center" }}>
           In describing the method of meditation as practiced in the School of
@@ -71,6 +72,7 @@ const MeditationPage = () => {
 
        <div className="wrapper-left">
             <ChartImage filename="chart.png" />
+            <h4>The Four Somatic Divisions of Man</h4>
             </div>
           
             <p>

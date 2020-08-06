@@ -10,7 +10,7 @@ const Media = () => {
       <SEO title="Colorado Media" />
       <div className="container" style={{ maxWidth: "800px" }}>
         <h1 style={{ marginTop: "190px" }}>Media Page</h1>
-        <h4> Dr. John Gozi</h4>
+        <h4> Dr. John Gozzi</h4>
         <h6>May-1981</h6>
         <br></br>
         <ul>

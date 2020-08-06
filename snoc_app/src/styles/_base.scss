@@ -32,8 +32,6 @@ h5{
   // border-left: 1px solid rgba(0, 0, 0, 0.4);
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
   line-height: 2;
-  
-  
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -44,6 +42,7 @@ h5{
 }
 .navbar-light .navbar-toggler{
   background-color: rgb(146, 135, 106);
+  float: right;
 }
 
 .navbar-light .navbar-text {

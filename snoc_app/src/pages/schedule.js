@@ -35,7 +35,7 @@ const ClassSchedule = () => {
         form and indicate which class you are interested in.
       </p>
       <CardDeck style={{ padding: "30px" }}>
-        <Card style={{ width: "18rem" }}>
+        <Card >
           <CardBody>
             <CardTitle className="cardtitle">Nine Steps on the Ladder of Development</CardTitle>
             <CardSubtitle className="mb-2 text-muted">by Vitvan</CardSubtitle>
@@ -44,7 +44,7 @@ const ClassSchedule = () => {
             </CardText>
           </CardBody>
         </Card>
-        <Card style={{ width: "18rem" }}>
+        <Card >
           <CardBody>
             <CardTitle>Gnostic Foundations of the US Government</CardTitle>
             <CardSubtitle className="mb-2 text-muted">by Vitvan</CardSubtitle>
@@ -54,7 +54,7 @@ const ClassSchedule = () => {
             </CardText>
           </CardBody>
         </Card>
-        <Card style={{ width: "18rem" }}>
+        <Card >
           <CardBody>
             <CardTitle>Practicing "The Work"</CardTitle>
             <CardSubtitle className="mb-2 text-muted">
@@ -66,7 +66,7 @@ const ClassSchedule = () => {
             </CardText>
           </CardBody>
         </Card>
-        <Card style={{ width: "18rem" }}>
+        <Card >
           <CardBody>
             <CardTitle>A Treatise on Faith</CardTitle>
             <CardSubtitle className="mb-2 text-muted">by Vitvan</CardSubtitle>
@@ -76,7 +76,7 @@ const ClassSchedule = () => {
             </CardText>
           </CardBody>
         </Card>
-        <Card style={{ width: "18rem" }}>
+        <Card >
           <CardBody>
             <CardTitle> Expanding States of Self Awareness</CardTitle>
             <CardSubtitle className="mb-2 text-muted">by Vitvan</CardSubtitle>

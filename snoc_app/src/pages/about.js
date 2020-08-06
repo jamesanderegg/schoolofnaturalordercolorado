@@ -1,6 +1,5 @@
 import React from "react"
-import BackgroundImage from "gatsby-background-image"
-import { graphql } from "gatsby"
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -14,7 +13,7 @@ const AboutPage = () => {
     <Layout>
       <SEO title="About" />
       <Container>
-        <Row style={{ marginTop: "180px" }}>
+        <Row style={{ marginTop: "100px" }}>
           <Col
             md={5}
             style={{
@@ -25,11 +24,16 @@ const AboutPage = () => {
             }}
           >
             <LargeImage filename="black-logo.png" />
+
             <br />
-            
-            
-            <h4 style={{fontStyle: 'italic', fontWeight: 'bold'}}> Sortem Suam Quisque Amet</h4>
-            <h6 style={{fontStyle: 'italic'}}>("Let each one love his own destiny")</h6>
+
+            <h4 style={{ fontStyle: "italic", fontWeight: "bold" }}>
+              {" "}
+              Sortem Suam Quisque Amet
+            </h4>
+            <h6 style={{ fontStyle: "italic" }}>
+              ("Let each one love his own destiny")
+            </h6>
           </Col>
           <Col
             md={7}
@@ -40,47 +44,59 @@ const AboutPage = () => {
               alignSelf: "center",
             }}
           >
-            
             <p>
               The eagle, with a serpent coiled around its neck has been the
               school’s logo since its inception as the School of the Sacred
               Science in the 1920’s.
             </p>
             <ul>
-              <p style={{ fontWeight: 'bold'}}>The serpent and eagle are ancient symbols:</p>
+              <p style={{ fontWeight: "bold" }}>
+                The serpent and eagle are ancient symbols:
+              </p>
               <li>
-                --The serpent representative of wisdom; its coiled form suggestive
-                of the power latent in the sacral center (the Greeks called it
-                the Power of the Christos).
+                --The serpent representative of wisdom; its coiled form
+                suggestive of the power latent in the sacral center (the Greeks
+                called it the Power of the Christos).
               </li>
               <li>
-              --The eagle represents ‘spiritual’ vision.  It was supposed to be the only creature that could look directly into the sun.
+                --The eagle represents ‘spiritual’ vision. It was supposed to be
+                the only creature that could look directly into the sun.
               </li>
             </ul>
-            <p>We use these symbols as our logo:  the eagle (‘spiritual’ vision) carrying the serpent (Christos Power) to “great heights”, the ascent of the force to the crown center.</p>
+            <p>
+              We use these symbols as our logo: the eagle (‘spiritual’ vision)
+              carrying the serpent (Christos Power) to “great heights”, the
+              ascent of the force to the crown center.
+            </p>
           </Col>
         </Row>
         <br />
-        <h3 style={{ fontWeight: 'bold'}}>The Schools Beginning</h3>
+        <h3 style={{ fontWeight: "bold" }}>The Schools Beginning</h3>
         <div className="wrapper-right">
-            <LargeImage filename="vitvan-at-table.png" />
-          </div>
-        <p style={{
-              margin: "30px 0",
-              textAlign: "center",
-              justifyContent: "center",
-              alignSelf: "center"}}>The School began in Los Angeles in 1922 and at that time was called
+          <LargeImage filename="vitvan-at-table.png" />
+          <h4>Vitvan</h4>
+        </div>
+        <p
+          style={{
+            margin: "30px 0",
+            textAlign: "center",
+            justifyContent: "center",
+            alignSelf: "center",
+          }}
+        >
+          The School began in Los Angeles in 1922 and at that time was called
           the School of the Sacred Science... It was founded by Ralph M. deBit
           who was born in Kansas in 1883. He was raised in a Methodist family
           with the Christian bible as his early religious training, and later as
           a young man, he studied Christian Science and various metaphysical
-          teachings.  He became a forest ranger in Idaho and said that it was
+          teachings. He became a forest ranger in Idaho and said that it was
           there, in 1907, that he began to seriously undertake his self
-          development with the study and practice of Eastern philosophy.  It was
+          development with the study and practice of Eastern philosophy. It was
           not long afterwards, in Seattle, that deBit met a man named A.K.
           Mozumdar who became his teacher. He spent seven years of work and
-          study with him.</p>
-          <p>
+          study with him.
+        </p>
+        <p>
           Toward the last half of the 19th century, there was a reappearance of
           the pre-Christian gnosis and the Wisdom Teaching as it had been
           presented in the Occident. It was upon this tradition that the School
@@ -96,8 +112,11 @@ const AboutPage = () => {
           during the winter to travel and lecture, and return to in the summer
           to teach seminars and classes.
         </p>
-          <div className="wrapper-left">
-        <LargeImage filename="dr-john.png" />
+        <div className="wrapper-left">
+          <LargeImage filename="dr-john.png" />
+          <div className="break">
+            <h4>Dr. John Gozzi</h4>
+          </div>
         </div>
         <p>
           During this period of his life, Vitvan was growing increasingly
@@ -118,8 +137,7 @@ const AboutPage = () => {
           to completely rewrite everything he had previously written to conform
           with the new structure he perceived.
         </p>
-        
-        
+
         <p>
           The current literature of the School of the Natural Order was either
           written as lessons in the 1940s, or transcribed from lectures that
@@ -135,8 +153,6 @@ const AboutPage = () => {
           locations: one in Baker, Nevada, and one in Denver, Colorado. There
           are also study groups in California and around the country.
         </p>
-        
-      
       </Container>
     </Layout>
   )
