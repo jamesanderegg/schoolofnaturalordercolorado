@@ -113,7 +113,7 @@ const AboutPage = () => {
           to teach seminars and classes.
         </p>
         <div className="wrapper-left">
-          <LargeImage filename="dr-john.png" />
+          <LargeImage filename="dr-john-1.png" />
           <div className="break">
             <h4>Dr. John Gozzi</h4>
           </div>

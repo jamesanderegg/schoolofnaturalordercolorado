@@ -40,7 +40,6 @@ p{
     float:right;
     margin: 0 40px;
     text-align: center;
-    
 }
 
 li{
@@ -51,12 +50,14 @@ li{
     .wrapper-left{
         float:none;
         display: flex;
+        margin: 0 0;
   justify-content: center;
   flex-wrap: wrap;
     }
     .wrapper-right{
         float: none;
         display: flex;
+        margin: 0 0;
         justify-content: center;
         flex-wrap: wrap;
 

@@ -1,3 +1,7 @@
+// require("dotenv").config({
+//   path: `.env.${process.env.NODE_ENV}`
+// })
+
 module.exports = {
   siteMetadata: {
     title: `The School of The Natural Order of Colorado`,
@@ -8,6 +12,12 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-177054791-1`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
