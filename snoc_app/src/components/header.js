@@ -7,14 +7,21 @@ import {
   NavItem,
   NavLink,
   NavbarText,
+  Dropdown,
+  DropdownItem,
+  DropdownMenu,
+  DropdownToggle,
   Row,
   Col,
 } from "reactstrap"
 
 const Header = ({ siteTitle }) => {
   const [isOpen, setIsOpen] = useState(false)
-  
+  const [mediaDropdown, setMediaDropdown] = useState(false)
 
+  const mediaToggle = () => {
+    setMediaDropdown(mediaDropdown => !mediaDropdown)
+  }
   const toggle = () => {
     setIsOpen(isOpen => !isOpen)
   }
@@ -22,21 +29,24 @@ const Header = ({ siteTitle }) => {
   return (
     <div>
       <Navbar fixed="top" light expand="lg">
-        <Row style={{width: "100%"}}>
-        <Col
+        <Row style={{ width: "100%" }}>
+          <Col
             xs={9}
             style={{
               textAlign: "center",
               justifyContent: "center",
               alignSelf: "center",
-              
-            }}>
+            }}
+          >
             <NavbarText>{siteTitle}</NavbarText>
           </Col>
-          <Col style={{
+          <Col
+            style={{
               textAlign: "center",
               justifyContent: "center",
-              alignSelf: "center",}}>
+              alignSelf: "center",
+            }}
+          >
             <NavbarToggler onClick={toggle} />
           </Col>
         </Row>
@@ -51,6 +61,12 @@ const Header = ({ siteTitle }) => {
             <NavItem>
               <NavLink href="/schedule">Class Schedule</NavLink>
             </NavItem>
+            <NavItem>
+              <NavLink href="/media">Media</NavLink>
+            </NavItem>
+            
+              
+            
             <NavItem>
               <NavLink href="/contact">Contact</NavLink>
             </NavItem>

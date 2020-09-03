@@ -28,9 +28,10 @@ const RoundImage = props => (
       if (!image) {
         return null
       }
-
+      
       const imageFluid = image.node.childImageSharp.fixed
-      return <Img alt={props.alt} fixed={imageFluid} className="rounded-circle lg-circle"/>
+      let alt = props.filename.split(".")[0]
+      return <Img alt={alt} fixed={imageFluid} className="rounded-circle lg-circle"/>
     }}
   />
 )

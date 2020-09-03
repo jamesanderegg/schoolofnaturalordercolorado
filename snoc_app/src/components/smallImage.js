@@ -30,8 +30,9 @@ const SmallImage = props => (
       }
 
       const imageFluid = image.node.childImageSharp.fixed
-      console.log(props)
-      return <Img alt={props.alt} fixed={imageFluid} />
+      
+      let alt = props.filename.split(".")[0]
+      return <Img alt={alt} fixed={imageFluid} id={alt} />
     }}
   />
 )

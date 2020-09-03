@@ -13,7 +13,7 @@ const AboutPage = () => {
     <Layout>
       <SEO title="About" />
       <Container>
-        <Row style={{ marginTop: "100px" }}>
+        <Row style={{ marginTop: "120px" }}>
           <Col
             md={5}
             style={{
@@ -63,7 +63,7 @@ const AboutPage = () => {
                 the only creature that could look directly into the sun.
               </li>
             </ul>
-            <p>
+            <p style={{fontStyle: "italic"}}>
               We use these symbols as our logo: the eagle (‘spiritual’ vision)
               carrying the serpent (Christos Power) to “great heights”, the
               ascent of the force to the crown center.
@@ -71,11 +71,14 @@ const AboutPage = () => {
           </Col>
         </Row>
         <br />
-        <h3 style={{ fontWeight: "bold" }}>The Schools Beginning</h3>
+        
         <div className="wrapper-right">
           <LargeImage filename="vitvan-at-table.png" />
-          <h4>Vitvan</h4>
+          <h2 >Vitvan</h2>
         </div>
+        <h1 style={{ fontWeight: "bold", marginBottom: "20px" }}>
+          The Schools Beginning
+        </h1>
         <p
           style={{
             margin: "30px 0",
@@ -113,9 +116,14 @@ const AboutPage = () => {
           to teach seminars and classes.
         </p>
         <div className="wrapper-left">
-          <LargeImage filename="dr-john-1.png" />
+          <LargeImage filename="dr-john.png" />
           <div className="break">
-            <h4>Dr. John Gozzi</h4>
+            <h2 >Dr. John Gozzi</h2>
+            <h4 style={{fontStyle: "italic"}}>
+              The Colorado Chapter of the School of the Natural Order was
+              founded by Dr. John Gozzi in 1978, one of Vitvan's longtime and
+              closest students.
+            </h4>
           </div>
         </div>
         <p>
@@ -148,11 +156,11 @@ const AboutPage = () => {
           80.
         </p>
         <br />
-        <p>
+        <h4 style={{fontStyle: "italic"}}>
           The School of the Natural Order presently has two established
           locations: one in Baker, Nevada, and one in Denver, Colorado. There
           are also study groups in California and around the country.
-        </p>
+        </h4>
       </Container>
     </Layout>
   )

@@ -32,10 +32,14 @@ h5{
   // border-left: 1px solid rgba(0, 0, 0, 0.4);
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
   line-height: 2;
+  
 }
-
+.navbar-nav .nav-link{
+  white-space: nowrap;
+}
 .navbar-light .navbar-nav .nav-link {
   color: rgb(252, 221, 155);
+  
   &:hover {
     color: #d8c839;
   }
@@ -57,4 +61,5 @@ ul {
 }
 p {
   letter-spacing: 2px;
+  font-size: large;
 }
