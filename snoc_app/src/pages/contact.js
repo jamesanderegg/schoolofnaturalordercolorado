@@ -1,9 +1,8 @@
-import React, { useState } from "react"
+import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import {
-  Container,
   Row,
   Col,
   Card,
@@ -63,7 +62,6 @@ const ContactPage = () => {
             <textarea
               name="message"
               id="message"
-              rows="5"
               placeholder="Type your Message here. If inquiring about a class, please include the title of the class in your message. "
               rows="10"
               style={{ width: "100%" }}

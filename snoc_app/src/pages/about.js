@@ -74,11 +74,12 @@ const AboutPage = () => {
         
         <div className="wrapper-right">
           <LargeImage filename="vitvan-at-table.png" />
-          <h2 >Vitvan</h2>
+          <h4 style={{ fontWeight: "bold" }}>Vitvan</h4>
+
         </div>
-        <h1 style={{ fontWeight: "bold", marginBottom: "20px" }}>
+        <h3 style={{ fontWeight: "bold", marginBottom: "20px" }}>
           The Schools Beginning
-        </h1>
+        </h3>
         <p
           style={{
             margin: "30px 0",
@@ -118,12 +119,12 @@ const AboutPage = () => {
         <div className="wrapper-left">
           <LargeImage filename="dr-john.png" />
           <div className="break">
-            <h2 >Dr. John Gozzi</h2>
-            <h4 style={{fontStyle: "italic"}}>
+          <h4 style={{ fontWeight: "bold" }}>Dr. John Gozzi</h4>
+            <h6 style={{fontStyle: "italic"}}>
               The Colorado Chapter of the School of the Natural Order was
               founded by Dr. John Gozzi in 1978, one of Vitvan's longtime and
               closest students.
-            </h4>
+            </h6>
           </div>
         </div>
         <p>
@@ -156,11 +157,11 @@ const AboutPage = () => {
           80.
         </p>
         <br />
-        <h4 style={{fontStyle: "italic"}}>
+        <h6 style={{fontStyle: "italic"}}>
           The School of the Natural Order presently has two established
           locations: one in Baker, Nevada, and one in Denver, Colorado. There
           are also study groups in California and around the country.
-        </h4>
+        </h6>
       </Container>
     </Layout>
   )

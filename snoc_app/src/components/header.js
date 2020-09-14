@@ -7,21 +7,15 @@ import {
   NavItem,
   NavLink,
   NavbarText,
-  Dropdown,
-  DropdownItem,
-  DropdownMenu,
-  DropdownToggle,
   Row,
   Col,
 } from "reactstrap"
 
 const Header = ({ siteTitle }) => {
   const [isOpen, setIsOpen] = useState(false)
-  const [mediaDropdown, setMediaDropdown] = useState(false)
+  
 
-  const mediaToggle = () => {
-    setMediaDropdown(mediaDropdown => !mediaDropdown)
-  }
+ 
   const toggle = () => {
     setIsOpen(isOpen => !isOpen)
   }

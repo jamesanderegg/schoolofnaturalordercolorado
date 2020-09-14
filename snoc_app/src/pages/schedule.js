@@ -1,13 +1,10 @@
 import React from "react"
-import BackgroundImage from "gatsby-background-image"
-import { graphql, Link } from "gatsby"
+import {  Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import {
   Container,
-  Col,
-  Row,
   Card,
   CardBody,
   CardTitle,
@@ -16,8 +13,6 @@ import {
   CardDeck,
 } from "reactstrap"
 import "../styles/page_content.scss"
-
-import LargeImage from "../components/largeImage"
 
 const ClassSchedule = () => {
   return (

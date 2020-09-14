@@ -1,6 +1,4 @@
 import React from "react"
-import BackgroundImage from "gatsby-background-image"
-import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -21,7 +19,7 @@ const MeditationPage = () => {
         </h1>
         <div className="wrapper-right">
           <LargeImage filename="vitvan-at-table-2.png" />
-          <h4>Vitvan</h4>
+          <h4 style={{ fontWeight: "bold" }}>Vitvan</h4>
         </div>
         <p style={{ textAlign: "center" }}>
           In describing the method of meditation as practiced in the School of
@@ -71,8 +69,8 @@ const MeditationPage = () => {
         </p>
 
        <div className="wrapper-left">
-            <ChartImage filename="chart.png" />
-            <h4>The Four Somatic Divisions of Man</h4>
+            <ChartImage filename="chart-1.png" />
+            <h4 style={{ fontWeight: "bold" }}>The Four Somatic Divisions of Man</h4>
             </div>
           
             <p>
@@ -228,6 +226,8 @@ const MeditationPage = () => {
               videoSrcURL="https://www.youtube.com/embed/ZYWkoBNsKqk"
               videoTitle="Getting Functional with Vitvan - A Meditation Practice"
             />
+            <h4 style={{ fontWeight: "bold" }}>Getting Functional with Vitvan</h4>
+
           </Col>
           <Col>
             <p>

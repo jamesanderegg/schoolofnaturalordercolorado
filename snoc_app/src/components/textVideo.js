@@ -2,7 +2,6 @@ import React from "react"
 import Video from "../components/video"
 import { Row, Col, Container } from "reactstrap"
 
-{/* <TextVideo url="https://www.youtube.com/embed/AX4VAUIWvUE" title="Vitvan - The Power to be Conscious" /> */}
 
 const TextVideo = ({ url, title }) => (
   <Container>
