@@ -68,5 +68,51 @@ li{
     img[alt~="dr-john"]{
         min-width: 550px;
     }
+}
+.members{
+    background-color: rgb(80, 80, 80);
+    color: white;
+}
+.members-top{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px;
+    grid-gap: 10px;
     
+}
+.members-bottom{
+    margin: 10px;
+    grid-gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.note-item{
+    margin: 10px;
+}
+.note-item p {
+    font-style: italic;
+    font-style: 8px;
+    font-size: medium;
+    margin-top: 10px;
+    
+}
+.note-item h5 {
+    color: white;
+    text-decoration: underline;
+    
+}
+@media (max-width: 570px){
+    .members-top {
+        
+        grid-template-columns: 1fr;
+
+    }
+    .members-bottom{
+        margin: 10px;
+        grid-gap: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
 }

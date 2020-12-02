@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import { Container, Col, Row } from "reactstrap"
+import Members from '../components/Members'
 import "../styles/page_content.scss"
 
 import LargeImage from "../components/largeImage"
@@ -162,6 +163,7 @@ const AboutPage = () => {
           locations: one in Baker, Nevada, and one in Denver, Colorado. There
           are also study groups in California and around the country.
         </h6>
+      <Members />
       </Container>
     </Layout>
   )

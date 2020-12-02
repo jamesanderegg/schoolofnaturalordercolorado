@@ -52,7 +52,7 @@ const ContactPage = () => {
         subject: values.subject}),
     };
     fetch('https://www.jamesanderegg.com/snoc_form', requestOptions).then(response => {
-      console.log(response)
+      
       if(response.status === 200){
         //form successful
         //clear errors
@@ -92,7 +92,7 @@ const ContactPage = () => {
       //catch the honey pot and check if it is empty. if not empty === bad
       if (value === "mapleSyrup") {
         if (values[value] !== "") {
-          console.log("ROBOT")
+          
           // Do Not submit form
           errors.push(value)
         }
@@ -107,7 +107,7 @@ const ContactPage = () => {
     if (errors.length !== 0) {
       //if errors do not submit form
       setErrors(errors)
-      console.log("errors")
+      
     } else {
       setErrors(errors)
       handleSubmit(values)
