@@ -2,7 +2,7 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-const RoundImage = props => (
+const FrontLogo = props => (
   <StaticQuery
     query={graphql`
       query {
@@ -12,8 +12,8 @@ const RoundImage = props => (
               relativePath
               name
               childImageSharp {
-                fixed(width: 120, height: 120) {
-                  ...GatsbyImageSharpFixed
+                fluid(maxWidth: 220) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
@@ -28,11 +28,12 @@ const RoundImage = props => (
       if (!image) {
         return null
       }
+
+      const imageFluid = image.node.childImageSharp.fluid
       
-      const imageFluid = image.node.childImageSharp.fixed
       let alt = props.filename.split(".")[0]
-      return <Img alt={alt} fixed={imageFluid} className="rounded-circle"/>
+      return <Img alt={alt} fluid={{...imageFluid,}} id={alt} />
     }}
   />
 )
-export default RoundImage
+export default FrontLogo

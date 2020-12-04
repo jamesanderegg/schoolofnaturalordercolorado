@@ -41,18 +41,14 @@ function Members() {
           <h4>Bottom Left:</h4>
           <h5> Bill LaShell - Advisor</h5>
           <p>
-            "The teachings of Vitvan and the School of the Natural Order guide
-            me in Self understanding, moment to moment. The roadmap of the
-            School helps provide answers to the question “why”."
+          "The teachings of The School of the Natural Order have become as substantial to me as air, water and food. In my urge to understand myself and the Nature of Reality this work provides an extremely valuable road map."
           </p>
         </div>
         <div className="note-item">
           <h4>Bottom Right:</h4>
           <h5>Kathi Wright - Secretary</h5>
           <p>
-            "The teachings of Vitvan and the School of the Natural Order guide
-            me in Self understanding, moment to moment. The roadmap of the
-            School helps provide answers to the question “why”."
+          "I value the School of the Natural Order because it helps me understand myself and why I'm here.  It provides a clear roadmap for developing to my full potential." 
           </p>
         </div>
       </div>

@@ -1,58 +1,116 @@
- 
- .circle-links{
+.about{
+  grid-area: about;
+}
+.contact{
+  grid-area: contact;
+}
+.schedule {
+  grid-area: schedule;
+}
+.mediaItems {
+  grid-area: media;
+}
+.meditation {
+  grid-area: meditation;
+}
+ .circles-grid{
     
-    list-style-type: none;
-    text-align: center;   
+    display: grid;
+    border: 1px solid blue;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "contact schedule about media meditation";
+    text-align: center;
+    align-items: center;
+    
  }
- .circle-links li {
-    min-width: 120px;
-    margin: 0 5px;
-    height: 250px;
-    vertical-align: middle;
-    display: inline-block;
-     
+ .item{
+   border: 1px solid red;
+   max-width: 220px;
+   max-height: 200px;
+   
  }
- .circle-links ul {
-    margin: auto;
+ .media-grid {
+   border: 1px solid green;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 2px;
+ }
+ .media-item {
+    border: 1px solid blue;
+ }
+ .item:hover {
+   text-decoration: underline;
+ }
+.media-item:hover {
+  text-decoration: underline;
 }
-.rounded-circle{
-    vertical-align: middle;
-    position: absolute;
+.media-title-item:hover {
+  text-decoration: underline;
 }
- .lg-circle:hover{
-    animation: in-focus 1s linear;
- }
- @keyframes in-focus {
-    0%   { 
-      height: 120px;
-      width: 120px;
-    }
-    5% {
-      height: 130px;
-      width: 130px;
-    }
-    100% { 
-      height: 130px;
-      width: 130px;
-    }
+@media (max-width: 950px) {
+  .circles-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "contact contact about about schedule schedule";
+    
+    align-items: center;
+  
   }
-  .sm-circle:hover{
-   animation: sm-in-focus 1s linear;
+  .meditation {
+    grid-area: 2 / 2 / 2 / 4;
+  }
+  .mediaItems {
+    grid-area: 2 / 4/ 2 / 6;
+  }
 }
-@keyframes sm-in-focus {
-   0%   { 
-     height: 75px;
-     width: 75px;
-   }
-   15% {
-     height: 85px;
-     width: 85px;
-   }
-   100% { 
-     height: 85px;
-     width: 85px;
-   }
- }
-// .dd-list{
-//    opacity: 0;
-// }
+@media (max-width: 600px) {
+  .circles-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "about about";
+    margin: 20px 50px;
+  }
+  
+  .about {
+    grid-area: 1 / 2 / 1 /4;
+  }
+  .contact {
+    grid-area: 2 / 1 / 2 / 3;
+  }
+  .meditation {
+    grid-area: 2 / 3 / 2 / 5;
+  }
+  .schedule {
+    grid-area: 3 / 1 / 3 / 3;
+  }
+  .mediaItems {
+    grid-area: 3 / 3 / 3 / 5;
+  }
+}
+@media (max-width: 420px) {
+  .circles-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "about about";
+    margin: 20px 100px;
+  }
+  
+  .about {
+    grid-area: 1;
+  }
+  .contact {
+    grid-area: 2;
+  }
+  .meditation {
+    grid-area: 3;
+  }
+  .schedule {
+    grid-area: 4;
+  }
+  .mediaItems {
+    grid-area: 5;
+  }
+}
+  
+

@@ -12,7 +12,7 @@ import {
   CardSubtitle,
   CardDeck,
 } from "reactstrap"
-import "../styles/page_content.scss"
+
 
 const ClassSchedule = () => {
   return (

@@ -1,93 +1,97 @@
 import React, { useState } from "react"
 
-import { NavLink } from "reactstrap"
+import { Link } from "gatsby"
 import RoundImage from "../components/roundImage"
 import SmallRoundImage from "../components/smallRoundImage"
-
 import "../styles/navbarCircles.scss"
+
 import SmallImage from "./smallImage"
+import FrontLogo from "./frontLogo"
 
 const NavbarCircles = () => {
   const [mediaOpen, setMediaOpen] = useState(false)
 
-  const toggleMedia = () => {
+  const toggleMedia = e => {
+    e.preventDefault()
     setMediaOpen(isOpen => !isOpen)
-    
   }
   return (
-    <ul className="circle-links">
-      <li>
-        <NavLink href="/schedule">
-          <h5>Class Schedule</h5>
-        </NavLink>
-        <NavLink href="/schedule">
+    <div className="circles-grid">
+      <div className="item schedule">
+        <Link to="/schedule">
+          <h5 className="link-item">Class Schedule</h5>
+        </Link>
+        <Link to="/schedule">
           <RoundImage filename="vitvan-portrait.png" />
-        </NavLink>
-        
-      </li>
-      <li>
-        <NavLink href="/contact">
-          <h5>Contact</h5>
-        </NavLink>
-        <NavLink href="/contact">
+        </Link>
+      </div>
+      <div className="item contact">
+        <Link to="/contact">
+          <h5 className="link-item">Contact</h5>
+        </Link>
+        <Link to="/contact">
           <RoundImage filename="snow-peaks.png" />
-        </NavLink>
-      </li>
+        </Link>
+      </div>
 
-      <li>
-        <NavLink href="/about">
-          <h5>About</h5>
-        </NavLink>
-        <NavLink href="/about">
-          <SmallImage filename="black-logo.png" />
-        </NavLink>
-      </li>
+      <div className="item about">
+        <Link to="/about">
+          <h5 className="link-item">About</h5>
+        </Link>
+        <Link to="/about">
+          <FrontLogo filename="black-logo.png" />
+        </Link>
+      </div>
 
-      <li>
-        
-        {!mediaOpen ? <div className="dd-wrapper">
-          <NavLink href="#" onClick={toggleMedia}>
-            <h5>SNO Media</h5>
-          </NavLink>
-          <NavLink href="#" onClick={toggleMedia}>
-            <RoundImage filename="rainbow.png" />
-          </NavLink>
-        </div> : (<div className="dd-list">
-          <ul>
-          <NavLink href="#" onClick={toggleMedia}><h5>Media</h5></NavLink>
-            <li>
-              <NavLink href="/media">
-                <h5>Colorado</h5>
-              </NavLink>
-              <NavLink href="/media">
-              <SmallRoundImage filename="colorado.png" />
-              </NavLink>
-              <h6>snoc.org</h6>
-            </li>
-            <li>
-              <NavLink href="https://www.sno.org/books-and-mp3s">
-                <h5>Nevada</h5>
-              </NavLink>
-              <NavLink href="https://www.sno.org/books-and-mp3s">
-              <SmallRoundImage filename="rainbow.png" />
-              </NavLink>
-              <h6>sno.org</h6>
-            </li>
-          </ul>
-        </div>)}
-        
-      </li>
-      <li>
-        <NavLink href="/meditation">
-          <h5>Meditation</h5>
-        </NavLink>
-        <NavLink href="/meditation">
+      <div className="item mediaItems">
+        {!mediaOpen ? (
+          <div className="media-title-item">
+            <Link to="#" onClick={toggleMedia}>
+              <h5 className="link-item">SNO Media</h5>
+            </Link>
+            <Link to="#" onClick={toggleMedia}>
+              <RoundImage filename="rainbow.png" />
+            </Link>
+          </div>
+        ) : (
+          <div className="dd-list">
+            <ul>
+              <Link to="#" onClick={toggleMedia}>
+                <h5 className="media-title-item">Media</h5>
+              </Link>
+              <div className="media-grid">
+                <div className="media-item">
+                  <Link to="/media">
+                    <h5 className="link-item">Colorado</h5>
+                  </Link>
+                  <Link to="/media">
+                    <SmallRoundImage filename="colorado.png" />
+                  </Link>
+                  <h6>snoc.org</h6>
+                </div>
+                <div className="media-item">
+                  <Link to="https://www.sno.org/books-and-mp3s">
+                    <h5 className="link-item">Nevada</h5>
+                  </Link>
+                  <Link to="https://www.sno.org/books-and-mp3s">
+                    <SmallRoundImage filename="rainbow.png" />
+                  </Link>
+                  <h6>sno.org</h6>
+                </div>
+              </div>
+            </ul>
+          </div>
+        )}
+      </div>
+      <div className="item meditation">
+        <Link to="/meditation">
+          <h5 className="link-item">Meditation</h5>
+        </Link>
+        <Link to="/meditation">
           <RoundImage filename="lightning.png" />
-        </NavLink>
-      </li>
-    </ul>
+        </Link>
+      </div>
+    </div>
   )
 }
 export default NavbarCircles
-
-
