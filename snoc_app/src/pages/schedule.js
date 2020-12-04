@@ -19,7 +19,7 @@ const ClassSchedule = () => {
     <Layout>
       <SEO title="About" />
       <h1 className="title">Class Schedule</h1>
-      <p style={{ textAlign: "center" }}>
+      <p style={{ textAlign: "center", margin: "15px" }}>
         The School of the Natural Order offers three classes online. The classes
         are taught by students for students. If you are interested in joining a
         class, please fill out the{" "}
@@ -80,7 +80,7 @@ const ClassSchedule = () => {
           </CardBody>
         </Card>
       </CardDeck>
-      <p>Please visit the contact page to sign up for classes </p>
+      <p style={{margin: "15px"}}>Please visit the contact page to sign up for classes </p>
       <h3>
         <Link to="/contact" className="link">
           Contact Us!

@@ -158,7 +158,7 @@ const AboutPage = () => {
           80.
         </p>
         <br />
-        <h6 style={{fontStyle: "italic"}}>
+        <h6 style={{fontStyle: "italic", textAlign: 'center', margin: '20px', padding: "20px"}}>
           The School of the Natural Order presently has two established
           locations: one in Baker, Nevada, and one in Denver, Colorado. There
           are also study groups in California and around the country.

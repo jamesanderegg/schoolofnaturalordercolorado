@@ -6,7 +6,7 @@ import { Row, Col, Container } from "reactstrap"
 const TextVideo = ({ url, title }) => (
   <Container>
   <Row>
-          <Col md={6} style={{ textAlign: "center", justifyContent:"center", alignSelf: "center"}}>
+          <Col md={6} style={{ textAlign: "center", justifyContent:"center", alignSelf: "center", marginTop: "20px"}}>
             <h3>The Power to Be Conscious</h3>
             <p>
               “Do you know that the most important, fundamental, basic Fact

@@ -4,11 +4,11 @@ import MembersPicture from "./membersPicture"
 function Members() {
   return (
     <div className="members">
-      <h2 style={{ textAlign: "center" }}>SNOC Members</h2>
+      <h2 style={{ textAlign: "center", padding: "20px", color: "rgb(252, 221, 155)", textDecoration:'underline'  }}>SNOC Members</h2>
       <MembersPicture filename="members.png" />
       <div className="members-top">
         <div className="note-item">
-          <h4>Top Left:</h4>
+          <h4 className="members-location">Top Left:</h4>
           <h5> Vic Weese - President</h5>
           
           <p>
@@ -18,7 +18,7 @@ function Members() {
           </p>
         </div>
         <div className="note-item">
-          <h4>Top Middle:</h4>
+          <h4 className="members-location">Top Middle:</h4>
           <h5>John McKlosky - Vice President</h5>
           <p>
             "Being born a searcher, I found Vitvan and my search was complete.
@@ -27,7 +27,7 @@ function Members() {
           </p>
         </div>
         <div className="note-item">
-          <h4>Top Right:</h4>
+          <h4 className="members-location">Top Right:</h4>
           <h5>Eric Schneider - Treasurer</h5>
           <p>
             "I find the teachings of the School of the Natural Order are like
@@ -38,14 +38,14 @@ function Members() {
       </div>
       <div className="members-bottom">
         <div className="note-item">
-          <h4>Bottom Left:</h4>
+          <h4 className="members-location">Bottom Left:</h4>
           <h5> Bill LaShell - Advisor</h5>
           <p>
           "The teachings of The School of the Natural Order have become as substantial to me as air, water and food. In my urge to understand myself and the Nature of Reality this work provides an extremely valuable road map."
           </p>
         </div>
         <div className="note-item">
-          <h4>Bottom Right:</h4>
+          <h4 className="members-location">Bottom Right:</h4>
           <h5>Kathi Wright - Secretary</h5>
           <p>
           "I value the School of the Natural Order because it helps me understand myself and why I'm here.  It provides a clear roadmap for developing to my full potential." 

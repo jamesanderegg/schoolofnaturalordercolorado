@@ -32,7 +32,7 @@ const Header = ({ siteTitle }) => {
               alignSelf: "center",
             }}
           >
-            <NavbarText>{siteTitle}</NavbarText>
+            <NavLink className="site-title" href="/">{siteTitle}</NavLink>
           </Col>
           <Col
             style={{
