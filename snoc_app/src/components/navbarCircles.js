@@ -70,9 +70,9 @@ const NavbarCircles = () => {
                   <h6>snoc.org</h6>
                 </div>
                 <div className="media-item">
-                  <Link to="https://www.sno.org/books-and-mp3s">
+                  <a href="https://www.sno.org/books-and-mp3s">
                     <h5 className="link-item">Nevada</h5>
-                  </Link>
+                  </a>
                   <Link to="https://www.sno.org/books-and-mp3s">
                     <SmallRoundImage filename="rainbow.png" />
                   </Link>

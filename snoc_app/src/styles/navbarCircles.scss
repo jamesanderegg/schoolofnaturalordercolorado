@@ -16,7 +16,7 @@
  .circles-grid{
     
     display: grid;
-    border: 1px solid blue;
+    
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "contact schedule about media meditation";
@@ -26,19 +26,16 @@
     margin: 20px;
  }
  .item{
-   border: 1px solid red;
    max-width: 220px;
    max-height: 220px;
    
  }
  .media-grid {
-   border: 1px solid green;
    display: grid;
    grid-template-columns: 1fr 1fr;
    grid-gap: 2px;
  }
  .media-item {
-    border: 1px solid blue;
  }
  .item:hover {
    text-decoration: underline;

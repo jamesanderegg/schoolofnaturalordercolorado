@@ -8,7 +8,7 @@ import Members from '../components/Members'
 import "../styles/page_content.scss"
 
 import LargeImage from "../components/largeImage"
-
+import SmallImage from "../components/smallImage"
 const AboutPage = () => {
   return (
     <Layout>
@@ -164,7 +164,13 @@ const AboutPage = () => {
           are also study groups in California and around the country.
         </h6>
       <Members />
+      <div className="paypal">
+      <a href="https://www.paypal.com/paypalme/SNOofColorado">
+      <SmallImage filename="paypal.png" />
+      </a>
+      </div>
       </Container>
+      
     </Layout>
   )
 }
