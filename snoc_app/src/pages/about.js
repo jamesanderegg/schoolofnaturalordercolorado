@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import { Container, Col, Row } from "reactstrap"
-import Members from '../components/Members'
+import Members from "../components/Members"
 import "../styles/page_content.scss"
 
 import LargeImage from "../components/largeImage"
@@ -64,7 +64,7 @@ const AboutPage = () => {
                 the only creature that could look directly into the sun.
               </li>
             </ul>
-            <p style={{fontStyle: "italic"}}>
+            <p style={{ fontStyle: "italic" }}>
               We use these symbols as our logo: the eagle (‘spiritual’ vision)
               carrying the serpent (Christos Power) to “great heights”, the
               ascent of the force to the crown center.
@@ -72,11 +72,10 @@ const AboutPage = () => {
           </Col>
         </Row>
         <br />
-        
+
         <div className="wrapper-right">
           <LargeImage filename="vitvan-at-table.png" />
           <h4 style={{ fontWeight: "bold" }}>Vitvan</h4>
-
         </div>
         <h3 style={{ fontWeight: "bold", marginBottom: "20px" }}>
           The Schools Beginning
@@ -120,8 +119,8 @@ const AboutPage = () => {
         <div className="wrapper-left">
           <LargeImage filename="dr-john.png" />
           <div className="break">
-          <h4 style={{ fontWeight: "bold" }}>Dr. John Gozzi</h4>
-            <h6 style={{fontStyle: "italic"}}>
+            <h4 style={{ fontWeight: "bold" }}>Dr. John Gozzi</h4>
+            <h6 style={{ fontStyle: "italic" }}>
               The Colorado Chapter of the School of the Natural Order was
               founded by Dr. John Gozzi in 1978, one of Vitvan's longtime and
               closest students.
@@ -158,19 +157,29 @@ const AboutPage = () => {
           80.
         </p>
         <br />
-        <h6 style={{fontStyle: "italic", textAlign: 'center', margin: '20px', padding: "20px"}}>
+        <h6
+          style={{
+            fontStyle: "italic",
+            textAlign: "center",
+            margin: "20px",
+            padding: "20px",
+          }}
+        >
           The School of the Natural Order presently has two established
           locations: one in Baker, Nevada, and one in Denver, Colorado. There
           are also study groups in California and around the country.
         </h6>
-      <Members />
-      <div className="paypal">
-      <a href="https://www.paypal.com/paypalme/SNOofColorado">
-      <SmallImage filename="paypal.png" />
-      </a>
-      </div>
+        <Members />
+        <div className="paypal">
+          <a href="https://www.paypal.com/paypalme/SNOofColorado">
+            <SmallImage filename="paypal.png" />
+          </a>
+        </div>
+        <p>
+          Please feel free to donate and support ongoing creative activities of
+          the SNOC: Zoom classes, website and "outreach" programs.
+        </p>
       </Container>
-      
     </Layout>
   )
 }
