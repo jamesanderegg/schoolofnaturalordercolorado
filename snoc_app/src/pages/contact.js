@@ -2,18 +2,50 @@ import React, { useState } from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import {
-  Row,
-  Col,
-  Card,
-  CardBody,
-  CardTitle,
-  CardText,
-  CardSubtitle,
-  CardDeck,
-} from "reactstrap"
+import styled from "styled-components"
+import SmallImage from "../components/smallImage"
 
+const GridWrapper = styled.div`
+  margin: 0 40px;
+  display: grid;
 
+  grid-template-columns: 1fr 1fr;
+`
+const HeaderStyle = styled.h1`
+  margin: 170px 0 10px;
+`
+const LeftWrapper = styled.div`
+  display: grid;
+  
+`
+const ClassList = styled.div`
+  
+`
+const Class = styled.div``
+const ClassHeader = styled.h4``
+const ClassTitle = styled.p`
+  margin: 0 20px;
+  text-align: start;
+  font-weight: bold;
+  font-size: small;
+`
+const ClassSubTitle = styled.p`
+  font-size: smaller;
+`
+
+const PayPal = styled.div`
+  width: 100%;
+  align-items: center;
+  margin: auto;
+`;
+const PayPalImage = styled.div`
+  max-width: 300px;
+  margin:auto;
+`;
+const FormWrapper = styled.div`
+  margin: 0 auto;
+  width: 100%;
+`
 
 const ContactPage = () => {
   const [values, setValue] = useState({
@@ -23,10 +55,9 @@ const ContactPage = () => {
     mapleSyrup: "",
     message: "",
   })
-  const [formSent, setFormSent] = useState(false);
+  const [formSent, setFormSent] = useState(false)
   const [errors, setErrors] = useState([])
-  
-  
+
   function updateValue(e) {
     // check if its a number and convert
     let { value } = e.target
@@ -41,45 +72,44 @@ const ContactPage = () => {
   }
 
   async function handleSubmit(values) {
-    
     const requestOptions = {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ 
+      body: JSON.stringify({
         name: values.name,
         email: values.email,
         message: values.message,
-        subject: values.subject}),
-    };
-    fetch('https://www.jamesanderegg.com/snoc_form', requestOptions).then(response => {
-      
-      if(response.status === 200){
-        //form successful
-        //clear errors
-        setErrors([])
-        //clear form
-        setValue({
-          name: "",
-          email: "",
-          subject: "",
-          mapleSyrup: "",
-          message: "",
-        });
-        //set form sent to true and display Success
-        setFormSent(true);
-      }else{
-        
-        //clear form
-        setValue({
-          name: "",
-          email: "",
-          subject: "",
-          mapleSyrup: "",
-          message: "",
-        });
-
+        subject: values.subject,
+      }),
+    }
+    fetch("https://www.jamesanderegg.com/snoc_form", requestOptions).then(
+      response => {
+        if (response.status === 200) {
+          //form successful
+          //clear errors
+          setErrors([])
+          //clear form
+          setValue({
+            name: "",
+            email: "",
+            subject: "",
+            mapleSyrup: "",
+            message: "",
+          })
+          //set form sent to true and display Success
+          setFormSent(true)
+        } else {
+          //clear form
+          setValue({
+            name: "",
+            email: "",
+            subject: "",
+            mapleSyrup: "",
+            message: "",
+          })
+        }
       }
-    })
+    )
   }
 
   const checkForm = e => {
@@ -92,7 +122,6 @@ const ContactPage = () => {
       //catch the honey pot and check if it is empty. if not empty === bad
       if (value === "mapleSyrup") {
         if (values[value] !== "") {
-          
           // Do Not submit form
           errors.push(value)
         }
@@ -107,7 +136,6 @@ const ContactPage = () => {
     if (errors.length !== 0) {
       //if errors do not submit form
       setErrors(errors)
-      
     } else {
       setErrors(errors)
       handleSubmit(values)
@@ -117,11 +145,51 @@ const ContactPage = () => {
   return (
     <Layout>
       <SEO title="Contact" />
-
-      <h1 style={{ marginTop: "190px" }}>Contact us</h1>
-      <br />
-      <Row style={{ margin: "0 10px" }}>
-        <Col md={6}>
+      <HeaderStyle>Contact us</HeaderStyle>
+      <GridWrapper>
+        <LeftWrapper>
+          <ClassList>
+            <ClassHeader>Class List:</ClassHeader>
+            <Class>
+              <ClassTitle>
+                The Natural Order Process". The Yoga Sutras of Patanjali
+              </ClassTitle>
+              <ClassSubTitle>
+                {" "}
+                - Classes will resume Monday on February 1, 2021 at 8:30 pm MTN.
+              </ClassSubTitle>
+            </Class>
+            <Class>
+              <ClassTitle>"Practice of the Way" by Vitvan.</ClassTitle>
+              <ClassSubTitle>
+                {" "}
+                - Begins Sunday on January 31st at 12:30 am MTN.
+              </ClassSubTitle>
+            </Class>
+            <Class>
+              <ClassTitle>"Steps in Self-Unfoldment" by Vitvan.</ClassTitle>
+              <ClassSubTitle>
+                {" "}
+                - Begins Sunday on February 7th at 10:30 am MTN.
+              </ClassSubTitle>
+            </Class>
+            <Class>
+              <ClassTitle>"A Treatise of Faith" by Vitvan.</ClassTitle>
+              <ClassSubTitle>
+                {" "}
+                - Presented every Wednesday at 8:30 pm MTN.
+              </ClassSubTitle>
+            </Class>
+          </ClassList>
+          <PayPal>
+            <PayPalImage>
+              <a href="https://www.paypal.com/paypalme/SNOofColorado">
+                <SmallImage filename="paypal.png" />
+              </a>
+            </PayPalImage>
+          </PayPal>
+        </LeftWrapper>
+        <FormWrapper>
           <form
             onSubmit={e => checkForm(e)}
             style={{
@@ -186,78 +254,14 @@ const ContactPage = () => {
               Send
             </button>
           </form>
-          {formSent? (<h4>Thank you, your message has been sent!</h4>): (null)}
+          {formSent ? <h4>Thank you, your message has been sent!</h4> : null}
           {errors.length !== 0
             ? errors.map((error, i) => (
                 <p key={i}>Please fill in the {error} field.</p>
               ))
             : null}
-          <br />
-        </Col>
-        <Col md={6}>
-          <h4 style={{ textAlign: "center" }}>Class List</h4>
-          <CardDeck>
-            <Card>
-              <CardBody>
-                <CardTitle className="cardtitle">
-                  Nine Steps on the Ladder of Development
-                </CardTitle>
-                <CardSubtitle className="mb-2 text-muted">
-                  by Vitvan
-                </CardSubtitle>
-                <CardText>
-                  Every second and fourth Monday of the month 6:00 pm (MST).
-                </CardText>
-              </CardBody>
-            </Card>
-            <Card>
-              <CardBody>
-                <CardTitle>Gnostic Foundations of the US Government</CardTitle>
-                <CardSubtitle className="mb-2 text-muted">
-                  by Vitvan
-                </CardSubtitle>
-                <CardText>
-                  Sunday, June 21st, at 9:30 am (MST). This class will be every
-                  other week (Sundays).
-                </CardText>
-              </CardBody>
-            </Card>
-            <Card>
-              <CardBody>
-                <CardTitle>Practicing "The Work"</CardTitle>
-                <CardSubtitle className="mb-2 text-muted">
-                  by Byron Katie
-                </CardSubtitle>
-                <CardText>
-                  Beginning June 10th at 8:00 pm (MST). This class will be every
-                  other week (Wednesdays).
-                </CardText>
-              </CardBody>
-            </Card>
-            <Card>
-              <CardBody>
-                <CardTitle>A Treatise on Faith</CardTitle>
-                <CardSubtitle className="mb-2 text-muted">
-                  by Vitvan
-                </CardSubtitle>
-                <CardText>
-                  Beginning June 17th at 8:00 pm (MST). This class will be every
-                  other week (Wednesdays).
-                </CardText>
-              </CardBody>
-            </Card>
-            <Card>
-              <CardBody>
-                <CardTitle> Expanding States of Self Awareness</CardTitle>
-                <CardSubtitle className="mb-2 text-muted">
-                  by Vitvan
-                </CardSubtitle>
-                <CardText>Every Sunday at 12:00 pm (MST)</CardText>
-              </CardBody>
-            </Card>
-          </CardDeck>
-        </Col>
-      </Row>
+        </FormWrapper>
+      </GridWrapper>
     </Layout>
   )
 }

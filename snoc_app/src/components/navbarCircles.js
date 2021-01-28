@@ -4,8 +4,6 @@ import { Link } from "gatsby"
 import RoundImage from "../components/roundImage"
 import SmallRoundImage from "../components/smallRoundImage"
 import "../styles/navbarCircles.scss"
-
-import SmallImage from "./smallImage"
 import FrontLogo from "./frontLogo"
 
 const NavbarCircles = () => {
@@ -72,11 +70,10 @@ const NavbarCircles = () => {
                 <div className="media-item">
                   <a href="https://www.sno.org/books-and-mp3s">
                     <h5 className="link-item">Nevada</h5>
-                  </a>
-                  <Link to="https://www.sno.org/books-and-mp3s">
                     <SmallRoundImage filename="rainbow.png" />
-                  </Link>
-                  <h6>sno.org</h6>
+                    <h6>sno.org</h6>
+                  </a>
+                  
                 </div>
               </div>
             </ul>

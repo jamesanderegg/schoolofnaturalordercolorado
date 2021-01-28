@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFacebookF, faYoutube } from "@fortawesome/free-brands-svg-icons"
 import roundImage from '../components/roundImage'
 import RoundImage from "../components/roundImage"
+import SmallRoundImage from "./smallRoundImage"
 
 const Footer = () => (
   <div className="site-footer">
@@ -32,6 +33,15 @@ const Footer = () => (
             <FontAwesomeIcon icon={faYoutube} className="fa-2x" />
           </a>
           
+        </li>
+        <li>
+                  <a href="https://www.sno.org/books-and-mp3s">
+                    <h5 className="link-item"><strong>Nevada</strong></h5>
+          
+                    <h6>sno.org</h6>
+                  </a>
+                  
+                
         </li>
       </ul>
     </div>
