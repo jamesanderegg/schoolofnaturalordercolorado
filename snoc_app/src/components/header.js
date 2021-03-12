@@ -1,16 +1,19 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
+import { Link } from "gatsby";
 import {
   Collapse,
   Navbar,
   NavbarToggler,
   Nav,
   NavItem,
-  NavLink,
   NavbarText,
   Row,
   Col,
 } from "reactstrap"
-
+import styled from 'styled-components';
+const StyledLink = styled(props => <Link {...props} />)`
+  color:  rgb(252, 221, 155);
+`;
 const Header = ({ siteTitle }) => {
   const [isOpen, setIsOpen] = useState(false)
   
@@ -32,7 +35,7 @@ const Header = ({ siteTitle }) => {
               alignSelf: "center",
             }}
           >
-            <NavLink className="site-title" href="/">{siteTitle}</NavLink>
+            <StyledLink className="site-title" to="/">{siteTitle}</StyledLink>
           </Col>
           <Col
             style={{
@@ -47,24 +50,24 @@ const Header = ({ siteTitle }) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
             <NavItem>
-              <NavLink href="/">Home</NavLink>
+              <StyledLink to="/">Home</StyledLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/about">About</NavLink>
+              <StyledLink to="/about">About</StyledLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/schedule">Class Schedule</NavLink>
+              <StyledLink to="/schedule">Class Schedule</StyledLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/media">Media</NavLink>
+              <StyledLink to="/media">Media</StyledLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/meditation">Meditation</NavLink>
+              <StyledLink to="/meditation">Meditation</StyledLink>
             </NavItem>
               
             
             <NavItem>
-              <NavLink href="/contact">Contact</NavLink>
+              <StyledLink to="/contact">Contact</StyledLink>
             </NavItem>
             
           </Nav>

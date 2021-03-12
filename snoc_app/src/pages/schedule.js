@@ -5,11 +5,11 @@ import SEO from "../components/seo"
 import styled from "styled-components"
 
 const TopParagraph = styled.div`
-  text-align:center;
+  text-align: center;
   font-size: large;
-  width: 80%;
+  width: 90%;
   margin: 20px auto;
-`;
+`
 
 const ClassWrapper = styled.div`
   width: 89%;
@@ -33,10 +33,10 @@ const ClassText = styled.div`
 `
 
 const Announcment = styled.div`
-    font-size: larger;
-    
-    margin: 50px 100px;
-`;
+  font-size: larger;
+  text-align: center;
+  margin: 50px 150px;
+`
 
 const ClassSchedule = () => {
   return (
@@ -52,12 +52,17 @@ const ClassSchedule = () => {
         </Link>{" "}
         form and indicate which class you are interested in.
       </TopParagraph>
-
+      <Announcment>
+        <strong>** Special Class Announcement:</strong> Beginning Sunday,
+        2/07/2021, the SNOC will be offering "Steps in Self-Unfoldment". This
+        class is considered a "beginner's" course and particularly appropriate
+        as an introduction to the SNO teachings/"Gnosis"
+      </Announcment>
       <ClassWrapper>
         <Class>
           <ClassTitle>Monday night Class:</ClassTitle>
           <ClassSubTitle className="ClassTitle">
-            Classes will resume on February 1, 2021 at 8:30 pm MTN.
+            Classes will resume on February 1, 2021 at 7:30 pm MTN.
           </ClassSubTitle>
           <ClassText>
             We will be studying Volume II of{" "}
@@ -69,7 +74,7 @@ const ClassSchedule = () => {
         </Class>
         <Class>
           <ClassTitle>Sunday Class:</ClassTitle>
-          <ClassSubTitle>Begins on January 31st at 12:30 am MTN.</ClassSubTitle>
+          <ClassSubTitle>Begins on January 31st at 11:30 am MTN.</ClassSubTitle>
           <ClassText>
             <strong>"Practice of the Way"</strong> by Vitvan. The class will be
             hosted every Sunday.
@@ -77,7 +82,7 @@ const ClassSchedule = () => {
         </Class>
         <Class>
           <ClassTitle>Sunday Class:</ClassTitle>
-          <ClassSubTitle>Begins on February 7th at 10:30 am MTN.</ClassSubTitle>
+          <ClassSubTitle>Begins on February 7th at 9:30 am MTN.</ClassSubTitle>
 
           <ClassText>
             <strong>"Steps in Self-Unfoldment"</strong> by Vitvan. The class
@@ -87,15 +92,14 @@ const ClassSchedule = () => {
         <Class>
           <ClassTitle>Wednesday Class:</ClassTitle>
           <ClassSubTitle>
-            Presented every Wednesday at 8:30 pm MTN.
+            Presented every Wednesday at 7:30 pm MTN.
           </ClassSubTitle>
           <ClassText>
             <strong>"A Treatise of Faith"</strong> by Vitvan.
           </ClassText>
         </Class>
       </ClassWrapper>
-      <Announcment><strong>** Special Class Announcement:</strong> Beginning Sunday, 2/07/2021, the SNOC will be offering "Steps in Self-Unfoldment".
-This class is considered a "beginner's" course and particularly appropriate as an introduction to the SNO teachings/"Gnosis"</Announcment>
+      
       <p style={{ margin: "15px" }}>
         Please visit the contact page to sign up for classes{" "}
       </p>

@@ -156,28 +156,28 @@ const ContactPage = () => {
               </ClassTitle>
               <ClassSubTitle>
                 {" "}
-                - Classes will resume Monday on February 1, 2021 at 8:30 pm MTN.
+                - Classes will resume Monday on February 1, 2021 at 7:30 pm MTN.
               </ClassSubTitle>
             </Class>
             <Class>
               <ClassTitle>"Practice of the Way" by Vitvan.</ClassTitle>
               <ClassSubTitle>
                 {" "}
-                - Begins Sunday on January 31st at 12:30 am MTN.
+                - Begins Sunday on January 31st at 11:30 am MTN.
               </ClassSubTitle>
             </Class>
             <Class>
               <ClassTitle>"Steps in Self-Unfoldment" by Vitvan.</ClassTitle>
               <ClassSubTitle>
                 {" "}
-                - Begins Sunday on February 7th at 10:30 am MTN.
+                - Begins Sunday on February 7th at 9:30 am MTN.
               </ClassSubTitle>
             </Class>
             <Class>
               <ClassTitle>"A Treatise of Faith" by Vitvan.</ClassTitle>
               <ClassSubTitle>
                 {" "}
-                - Presented every Wednesday at 8:30 pm MTN.
+                - Presented every Wednesday at 7:30 pm MTN.
               </ClassSubTitle>
             </Class>
           </ClassList>

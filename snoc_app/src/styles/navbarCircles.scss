@@ -29,8 +29,26 @@
  .item{
    max-width: 220px;
    max-height: 220px;
-   
+   transition: all .2s ease-in-out;
+   color: #333333;
  }
+ .item:hover{
+   text-decoration: underline;
+   transform: scale(1.06);
+ }
+
+ .aboutList{
+   list-style: initial;
+   margin: initial;
+  padding: 0 0 0 40px;
+  text-align: start;
+ }
+ .aboutItem {
+  display: list-item;
+  color: #333333;
+ }
+
+ 
  .media-grid {
    display: grid;
    grid-template-columns: 1fr 1fr;

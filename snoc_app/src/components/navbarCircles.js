@@ -8,6 +8,13 @@ import FrontLogo from "./frontLogo"
 
 const NavbarCircles = () => {
   const [mediaOpen, setMediaOpen] = useState(false)
+  const [aboutOpen, setAboutOpen] = useState(false)
+
+  const toggleAbout = e => {
+    e.preventDefault()
+    console.log("about")
+    setAboutOpen(isOpen => !isOpen)
+  }
 
   const toggleMedia = e => {
     e.preventDefault()
@@ -32,14 +39,32 @@ const NavbarCircles = () => {
         </Link>
       </div>
 
-      <div className="item about">
-        <Link to="/about">
-          <h5 className="link-item">About</h5>
-        </Link>
-        <Link to="/about">
-          <FrontLogo filename="black-logo.png" />
-        </Link>
-      </div>
+      {!aboutOpen ? (
+        <div className="item aboutItems">
+          <Link to="#" onClick={toggleAbout}>
+            <h5 className="link-item">About</h5>
+          </Link>
+          <Link to="#" onClick={toggleAbout}>
+            <FrontLogo filename="black-logo.png" />
+          </Link>
+        </div>
+      ) : (
+        <div>
+        <Link to="#" onClick={toggleAbout}>
+                <h5 className="item">About</h5>
+              </Link>
+          <ul className="aboutList">
+          
+            <li className="aboutItem">
+              <Link className="item" to="/introduction">Introduction</Link>
+            </li>
+            <li className="aboutItem">
+              <Link className="item" to="/about">About</Link></li>
+            <li className="aboutItem">
+              <Link className="item" to="/journal">CATE Journal</Link></li>
+          </ul>
+        </div>
+      )}
 
       <div className="item mediaItems">
         {!mediaOpen ? (
@@ -52,11 +77,11 @@ const NavbarCircles = () => {
             </Link>
           </div>
         ) : (
-          <div className="dd-list">
-            <ul>
+          <div>
               <Link to="#" onClick={toggleMedia}>
                 <h5 className="media-title-item">Media</h5>
               </Link>
+            <ul>
               <div className="media-grid">
                 <div className="media-item">
                   <Link to="/media">
@@ -64,16 +89,15 @@ const NavbarCircles = () => {
                   </Link>
                   <Link to="/media">
                     <SmallRoundImage filename="colorado.png" />
-                  </Link>
                   <h6>snoc.org</h6>
+                  </Link>
                 </div>
                 <div className="media-item">
                   <a href="https://www.sno.org/books-and-mp3s">
                     <h5 className="link-item">Nevada</h5>
                     <SmallRoundImage filename="rainbow.png" />
-                    <h6>sno.org</h6>
+                    <h6 className="item">sno.org</h6>
                   </a>
-                  
                 </div>
               </div>
             </ul>

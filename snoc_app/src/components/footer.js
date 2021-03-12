@@ -3,7 +3,7 @@ import React from "react"
 // get our fontawesome imports
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFacebookF, faYoutube } from "@fortawesome/free-brands-svg-icons"
-import roundImage from '../components/roundImage'
+import roundImage from "../components/roundImage"
 import RoundImage from "../components/roundImage"
 import SmallRoundImage from "./smallRoundImage"
 
@@ -32,20 +32,23 @@ const Footer = () => (
           >
             <FontAwesomeIcon icon={faYoutube} className="fa-2x" />
           </a>
-          
         </li>
         <li>
-                  <a href="https://www.sno.org/books-and-mp3s">
-                    <h5 className="link-item"><strong>Nevada</strong></h5>
-          
-                    <h6>sno.org</h6>
-                  </a>
-                  
-                
+          <a href="https://www.sno.org/books-and-mp3s">
+            
+
+            <h5><strong>sno.org</strong></h5>
+            <h6 className="link-item">
+              <strong>Nevada</strong>
+            </h6>
+          </a>
         </li>
       </ul>
     </div>
-    <p className="text-center"> &#x00A9; 2020 The School of Natural Order of Colorado</p>
+    <p className="text-center">
+      {" "}
+      &#x00A9; 2020 The School of Natural Order of Colorado
+    </p>
   </div>
 )
 export default Footer
