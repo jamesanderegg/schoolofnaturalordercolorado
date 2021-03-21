@@ -74,7 +74,7 @@ const ClassSchedule = () => {
         </Class>
         <Class>
           <ClassTitle>Sunday Class:</ClassTitle>
-          <ClassSubTitle>Begins on January 31st at 11:30 am MTN.</ClassSubTitle>
+          <ClassSubTitle>Begins on January 31st, 2021 at 11:30AM MTN.</ClassSubTitle>
           <ClassText>
             <strong>"Practice of the Way"</strong> by Vitvan. The class will be
             hosted every Sunday.
@@ -82,7 +82,7 @@ const ClassSchedule = () => {
         </Class>
         <Class>
           <ClassTitle>Sunday Class:</ClassTitle>
-          <ClassSubTitle>Begins on February 7th at 9:30 am MTN.</ClassSubTitle>
+          <ClassSubTitle>Begins on February 7th, 2021 at 9:30AM MTN.</ClassSubTitle>
 
           <ClassText>
             <strong>"Steps in Self-Unfoldment"</strong> by Vitvan. The class
@@ -92,16 +92,17 @@ const ClassSchedule = () => {
         <Class>
           <ClassTitle>Wednesday Class:</ClassTitle>
           <ClassSubTitle>
-            Presented every Wednesday at 7:30 pm MTN.
+            Begins on March 10th, 2021 at 7:30PM MTN. The class will be hosted every other Wednesday.
           </ClassSubTitle>
           <ClassText>
-            <strong>"A Treatise of Faith"</strong> by Vitvan.
+            <strong>"Teacher Manuel"</strong> by Vitvan.
           </ClassText>
+          <ClassText>This class is closed to new participates.</ClassText>
         </Class>
       </ClassWrapper>
       
       <p style={{ margin: "15px" }}>
-        Please visit the contact page to sign up for classes{" "}
+        <strong>Please visit the contact page to sign up for classes!</strong>
       </p>
       <h3>
         <Link to="/contact" className="link">

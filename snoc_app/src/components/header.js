@@ -56,16 +56,20 @@ const Header = ({ siteTitle }) => {
               <StyledLink to="/about">About</StyledLink>
             </NavItem>
             <NavItem>
+              <StyledLink to="/introduction">Introduction</StyledLink>
+            </NavItem>
+            <NavItem>
+              <StyledLink to="/journal">CATE Journal</StyledLink>
+            </NavItem>
+            <NavItem>
               <StyledLink to="/schedule">Class Schedule</StyledLink>
             </NavItem>
             <NavItem>
-              <StyledLink to="/media">Media</StyledLink>
+              <StyledLink to="/media">SNOC Media</StyledLink>
             </NavItem>
             <NavItem>
               <StyledLink to="/meditation">Meditation</StyledLink>
             </NavItem>
-              
-            
             <NavItem>
               <StyledLink to="/contact">Contact</StyledLink>
             </NavItem>

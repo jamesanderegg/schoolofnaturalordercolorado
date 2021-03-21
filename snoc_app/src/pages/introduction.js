@@ -2,14 +2,30 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import styled from "styled-components"
 import { Container, Col, Row } from "reactstrap"
+
+const WelcomeStyle = styled.h1`
+  padding: 20px;
+`
+const Title = styled.h2`
+  margin-bottom: 10px !important;
+  padding: 10px;
+`
+const ParagraphTitle = styled.h3`
+  margin-top: 40px;
+  margin-bottom: 10px;
+`
+
 const Introduction = () => {
   return (
     <Layout>
       <SEO title="Introduction" />
       <Container style={{ marginTop: "120px" }}>
-        <h1 style={{padding: '15px'}}>Welcome!</h1>
-        <h2 style={{textAlign: 'center'}}>SCHOOL OF THE NATURAL ORDER</h2>
+        <WelcomeStyle>Welcome!</WelcomeStyle>
+        <Title style={{ textAlign: "center", marginBottom: "40px" }}>
+          SCHOOL OF THE NATURAL ORDER
+        </Title>
         <p>
           When one is invited upon a journey, it is fair to indicate the route
           that is to be traveled, and the equipment that will be required. To do
@@ -39,7 +55,7 @@ const Introduction = () => {
           with ourselves, develop ourselves, lay hold of that mighty dynamic
           power with which we function, and direct that power. Vitvan
         </p>
-        <h3>Ancient Gnosis</h3>
+        <ParagraphTitle>Ancient Gnosis</ParagraphTitle>
         <p>
           The Ancient Wisdom Teachings present a description of the journey to
           be taken to self-knowledge. These teachings have been given in various
@@ -54,7 +70,7 @@ const Introduction = () => {
           for the new developing schools in the USA. SNO is outstanding among
           them.” (Vitvan)
         </p>
-        <h3>Science</h3>
+        <ParagraphTitle>Science</ParagraphTitle>
         <p>
           Students must have enough of the scientific approach to properly
           understand the Wisdom Teachings and to interpret them and represent
@@ -64,7 +80,7 @@ const Introduction = () => {
           course, on its own level, and in response to the dynamic operations of
           frequencies.
         </p>
-        <h3>Semantic</h3>
+        <ParagraphTitle>Semantic</ParagraphTitle>
         <p>
           SNO students have been given a methodology. We learn that we form
           images from the dynamic operation of frequencies and choose values to

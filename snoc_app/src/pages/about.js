@@ -170,11 +170,7 @@ const AboutPage = () => {
           are also study groups in California and around the country.
         </h6>
         <Members />
-        <div className="paypal">
-          <a href="https://www.paypal.com/paypalme/SNOofColorado">
-            <SmallImage filename="paypal.png" />
-          </a>
-        </div>
+     <br />
         <p>
           Please feel free to donate and support ongoing creative activities of
           the SNOC: Zoom classes, website and "outreach" programs.

@@ -3,7 +3,7 @@ import React from "react"
 // get our fontawesome imports
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFacebookF, faYoutube } from "@fortawesome/free-brands-svg-icons"
-import roundImage from "../components/roundImage"
+import SmallImage from "../components/smallImage"
 import RoundImage from "../components/roundImage"
 import SmallRoundImage from "./smallRoundImage"
 
@@ -13,6 +13,7 @@ const Footer = () => (
     <p className="text-center"> Follow us on Social Media</p>
     <div className="footer-social-links">
       <ul className="social-links-list">
+      
         <li>
           <a
             href="https://www.facebook.com/School-of-the-Natural-Order-Colorado-499911493409876/"
@@ -43,6 +44,11 @@ const Footer = () => (
             </h6>
           </a>
         </li>
+        <div className="paypal">
+          <a href="https://www.paypal.com/paypalme/SNOofColorado">
+            <SmallImage filename="paypal.png" />
+          </a>
+        </div>
       </ul>
     </div>
     <p className="text-center">
