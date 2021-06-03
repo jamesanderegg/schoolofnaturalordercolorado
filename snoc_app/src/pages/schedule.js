@@ -52,33 +52,30 @@ const ClassSchedule = () => {
         </Link>{" "}
         form and indicate which class you are interested in.
       </TopParagraph>
-      <Announcment>
-        <strong>** Special Class Announcement:</strong> Beginning Sunday,
-        2/07/2021, the SNOC will be offering "Steps in Self-Unfoldment". This
-        class is considered a "beginner's" course and particularly appropriate
-        as an introduction to the SNO teachings/"Gnosis"
-      </Announcment>
+      
       <ClassWrapper>
         <Class>
-          <ClassTitle>Monday night Class:</ClassTitle>
+          <ClassTitle>Monday Class:</ClassTitle>
           <ClassSubTitle className="ClassTitle">
-            Classes will resume on February 1, 2021 at 7:30 pm MTN.
+            Begins on February 1, 2021 at 7:30 pm MTN.
           </ClassSubTitle>
           <ClassText>
-            We will be studying Volume II of{" "}
             <strong>
-              "The Natural Order Process". The Yoga Sutras of Patanjali.
+              "The Natural Order Process, Volume II, The Yoga Sutras of Patanjali" 
             </strong>{" "}
-            The class will start and be hosted every other Monday.
+              by Vitvan.
           </ClassText>
+          <ClassText>The class will be hosted every other Monday</ClassText>
+          
         </Class>
         <Class>
           <ClassTitle>Sunday Class:</ClassTitle>
           <ClassSubTitle>Begins on January 31st, 2021 at 11:30AM MTN.</ClassSubTitle>
           <ClassText>
-            <strong>"Practice of the Way"</strong> by Vitvan. The class will be
-            hosted every Sunday.
+            <strong>"Practice of the Way"</strong> by Vitvan. 
           </ClassText>
+          <ClassText>The class will be
+            hosted every Sunday.</ClassText>
         </Class>
         <Class>
           <ClassTitle>Sunday Class:</ClassTitle>
@@ -95,9 +92,9 @@ const ClassSchedule = () => {
             Begins on March 10th, 2021 at 7:30PM MTN. The class will be hosted every other Wednesday.
           </ClassSubTitle>
           <ClassText>
-            <strong>"Teacher Manuel"</strong> by Vitvan.
+            <strong>"Teachers' Manual"</strong> by Vitvan.
           </ClassText>
-          <ClassText>This class is closed to new participates.</ClassText>
+          <ClassText>This class is closed to new participants.</ClassText>
         </Class>
       </ClassWrapper>
       
